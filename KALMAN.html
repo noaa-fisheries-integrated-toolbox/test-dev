@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NOAA Fisheries Kalman Filter</title>
+   <link type="text/css" rel="stylesheet" href="./static/tool_landing_page.css" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="mywrap">
+            <h1 class ="title">
+              Kalman Filter
+            </h1>
+              
+              <div class = "badge"  data-md-tooltip="Legacy Tool - Adopted"  id = badge_internal_inactive> </div>
+              
+              
+              <div class = "badge" data-md-tooltip=internal_inactive id = internal_inactive >
+              <!-- &#10039; -->
+              </div>
+              
+
+        </div>
+        <div class="mywrap">
+              
+                <button class = "codelink nolink" title="Online application unavailable">
+                Online Application
+                </button>
+              
+
+              
+              <button class = "codelink" title="link to download application" onclick=" window.open('https://github.com/nmfs-fish-tools/KALMAN/releases/download/2.3/KalmanFilterV2-3.zip', '_blank'); return false;">
+                Download Application
+                </button>
+              
+
+              
+                <button class = "codelink nolink" title="Documentation unavailable">
+                Documentation
+                </button>
+              
+
+              
+                <button class = "codelink nolink" title="Code Repository unavailable">
+                Code Repository
+                </button>
+              
+              <button class = "IconButton" title="e-mail fisheries.toolbox@noaa.gov" id ="email" onclick='location.href= "mailto:fisheries.toolbox@noaa.gov;"'>
+              </button>
+
+        </div>
+      <div class = "divider">
+      </div>
+
+
+      <div class ="main">
+        <div class="mywrap">
+              <div class ="label">
+                Kalman Filter (KALMAN)
+
+              </div>
+
+
+              
+
+
+              
+              
+              <img class = "versionButton" alt="GitHub release (latest by date)" src= https://img.shields.io/github/v/release/nmfs-fish-tools/KALMAN?color=%230093D0&include_prereleases&label=%20>
+              
+
+
+        </div>
+
+        <div class ="label">
+            
+             Type: Solver
+            
+        </div>
+
+        
+        <div class = "authName">
+         Authors: Seaver, A.
+
+        </div >
+        
+
+
+        
+
+          <div class ="mainText">
+            The Kalman Filter is a recursive algorithm for updating linear projections of the system comprised by of an Observation Equation and a State Equation. <p>Observation Equation: y<sub>t</sub> = q<sub>t</sub>b<sub>t</sub> + v<sub>t</sub> </p><p> State Equation: b<sub>t</sub> = b<sub>t-1</sub> - w<sub>t</sub> </p><p>The user will supply a vector of observations, coefficients of variation on observation error and scale vector (q<sub>t</sub>).  The model will estimate two parameters: the state variable at time zero (b<sub>0</sub>) and the standard error on the state variable (s<sub>w</sub>). The model will return a vector of Filtered and Smoothed observations.</p>
+          </div>
+
+          <div class="mainText">
+              
+                  <div class = "ref">
+                      References
+                  </div>
+                  <ul>
+                      
+                          <li>Meinhold, R and Meinhold, N. 1983. Understanding the Kalman Filter. The American Statistician, Vol. 37, No. 2 (May, 1983), pp. 123-127</li>
+                      
+                  </ul>
+              
+
+
+              
+
+              
+
+
+              
+
+              
+
+
+
+              <div class = "ref">
+              Code Repository Badges
+              </div>
+                  
+
+                      
+                          <img src="https://www.repostatus.org/badges/latest/inactive.svg">
+                      
+                  
+
+          </div>
+
+      </div>
+
+      <div class = "divider"></div>
+
+        <footer >
+             <img src="./static/noaa-fisheries-rgb-2line-horizontal-small.png" height="75" alt="NOAA Fisheries">
+         <div class="mywrap_center">
+          <a class ="mylink line" href="https://www.commerce.gov/">U.S. Department of Commerce</a>
+         <a class ="mylink line" href="https://www.noaa.gov">National Oceanographic and Atmospheric Administration</a>
+         <a class ="mylink" href="https://www.fisheries.noaa.gov/">NOAA Fisheries</a>
+         </div>
+
+        </footer>
+        <div class ="attribution">Icons by icons8 https://icons8.com/</div>
+
+    </div>
+
+
+</body>
+</html>
+

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NOAA Fisheries Age Structured Assessment Program</title>
+   <link type="text/css" rel="stylesheet" href="./static/tool_landing_page.css" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="mywrap">
+            <h1 class ="title">
+              Age Structured Assessment Program
+            </h1>
+              
+              <div class = "badge"  data-md-tooltip="Legacy Tool - Adopted"  id = badge_internal_inactive> </div>
+              
+              
+              <div class = "badge" data-md-tooltip=internal_inactive id = internal_inactive >
+              <!-- &#10039; -->
+              </div>
+              
+
+        </div>
+        <div class="mywrap">
+              
+                <button class = "codelink nolink" title="Online application unavailable">
+                Online Application
+                </button>
+              
+
+              
+              <button class = "codelink" title="link to download application" onclick=" window.open('https://github.com/nmfs-fish-tools/ASAP/releases/download/3.0.16/ASAPV30.zip', '_blank'); return false;">
+                Download Application
+                </button>
+              
+
+              
+               <button class = "codelink" title="link to documentation" onclick=" window.open('./User_Manual_for_ASAP3.pdf', '_blank'); return false;">
+                Documentation
+                </button>
+              
+
+              
+                <button class = "codelink nolink" title="Code Repository unavailable">
+                Code Repository
+                </button>
+              
+              <button class = "IconButton" title="e-mail fisheries.toolbox@noaa.gov" id ="email" onclick='location.href= "mailto:fisheries.toolbox@noaa.gov;"'>
+              </button>
+
+        </div>
+      <div class = "divider">
+      </div>
+
+
+      <div class ="main">
+        <div class="mywrap">
+              <div class ="label">
+                Age Structured Assessment Program (ASAP)
+
+              </div>
+
+
+              
+              <a class = "pdfIcon" title="download pdf"
+                href="https://www.researchgate.net/publication/266334996_A_Flexible_Forward_Age-Structured_Assessment_Program/download" download>
+              </a>
+              
+
+
+              
+              
+              <img class = "versionButton" alt="GitHub release (latest by date)" src= https://img.shields.io/github/v/release/nmfs-fish-tools/ASAP?color=%230093D0&include_prereleases&label=%20>
+              
+
+
+        </div>
+
+        <div class ="label">
+            
+              Type:  Statistical Catch-at-Age
+              
+        </div>
+
+        
+        <div class = "authName">
+         Authors: C. Legault and V. Restrepo
+
+        </div >
+        
+
+
+        
+
+          <div class ="mainText">
+            The Age Structured Assessment Program (ASAP) is an age-structured model that uses forward computations assuming separability of fishing mortality into year and age components to estimate population sizes given observed catches, catch-at-age, and indices of abundance. Discards can be treated explicitly. The separability assumption is relaxed by allowing for fleet-specific computations and by allowing the selectivity at age to change smoothly over time or in blocks of years. The software can also allow the catchability associated with each abundance index to vary smoothly with time. The problem’s dimensions (number of ages, years, fleets and abundance indices) are defined at input and limited by hardware only. The input is arranged assuming data is available for most years, but missing years are allowed. The model currently does not allow use of length data nor indices of survival rates. Diagnostics include index fits, residuals in catch and catch-at-age, and effective sample size calculations. Weights are input for different components of the objective function and allow for relatively simple age-structured production model type models up to fully parameterized models.  The calculation engine was built using AD Model Builder by Drs. Christopher M. Legault (currently at the NMFS Northeast Fisheries Science Center) and Victor R. Restrepo (currently at the NMFS Southeast Fisheries Science Center).  ASAP has been used as an assessment tool for red grouper (SEFSC), yellowtail flounder (NEFSC), Pacific sardine (SWFSC), Pacific mackerel (SWFSC), Greenland halibut (ICES), Norther Gulf of St. Lawrence cod (DFO), Gulf of Maine cod (NEFSC), Florida lobster (FFWCC), and fluke (NEFSC).
+          </div>
+
+          <div class="mainText">
+              
+                  <div class = "ref">
+                      References
+                  </div>
+                  <ul>
+                      
+                          <li>M Legault, Christopher & Restrepo, Victor. (1999). A Flexible Forward Age-Structured Assessment Program. ICCAT Coll. Vol. Sci. Pap.. 49. </li>
+                      
+                  </ul>
+              
+
+
+              
+
+              
+
+
+              
+
+              
+
+
+
+              <div class = "ref">
+              Code Repository Badges
+              </div>
+                  
+
+          </div>
+
+      </div>
+
+      <div class = "divider"></div>
+
+        <footer >
+             <img src="./static/noaa-fisheries-rgb-2line-horizontal-small.png" height="75" alt="NOAA Fisheries">
+         <div class="mywrap_center">
+          <a class ="mylink line" href="https://www.commerce.gov/">U.S. Department of Commerce</a>
+         <a class ="mylink line" href="https://www.noaa.gov">National Oceanographic and Atmospheric Administration</a>
+         <a class ="mylink" href="https://www.fisheries.noaa.gov/">NOAA Fisheries</a>
+         </div>
+
+        </footer>
+        <div class ="attribution">Icons by icons8 https://icons8.com/</div>
+
+    </div>
+
+
+</body>
+</html>
+

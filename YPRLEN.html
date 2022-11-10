@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NOAA Fisheries Length Based Yield Per Recruit</title>
+   <link type="text/css" rel="stylesheet" href="./static/tool_landing_page.css" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="mywrap">
+            <h1 class ="title">
+              Length Based Yield Per Recruit
+            </h1>
+              
+              <div class = "badge"  data-md-tooltip="Legacy Tool - Adopted"  id = badge_internal_inactive> </div>
+              
+              
+              <div class = "badge" data-md-tooltip=internal_inactive id = internal_inactive >
+              <!-- &#10039; -->
+              </div>
+              
+
+        </div>
+        <div class="mywrap">
+              
+                <button class = "codelink nolink" title="Online application unavailable">
+                Online Application
+                </button>
+              
+
+              
+              <button class = "codelink" title="link to download application" onclick=" window.open('https://github.com/nmfs-fish-tools/YPRLEN/releases/download/2.1.0/YPRLENV21.zip', '_blank'); return false;">
+                Download Application
+                </button>
+              
+
+              
+                <button class = "codelink nolink" title="Documentation unavailable">
+                Documentation
+                </button>
+              
+
+              
+                <button class = "codelink nolink" title="Code Repository unavailable">
+                Code Repository
+                </button>
+              
+              <button class = "IconButton" title="e-mail fisheries.toolbox@noaa.gov" id ="email" onclick='location.href= "mailto:fisheries.toolbox@noaa.gov;"'>
+              </button>
+
+        </div>
+      <div class = "divider">
+      </div>
+
+
+      <div class ="main">
+        <div class="mywrap">
+              <div class ="label">
+                Length Based Yield Per Recruit (YPRLEN)
+
+              </div>
+
+
+              
+
+
+              
+              
+              <img class = "versionButton" alt="GitHub release (latest by date)" src= https://img.shields.io/github/v/release/nmfs-fish-tools/YPRLEN?color=%230093D0&include_prereleases&label=%20>
+              
+
+
+        </div>
+
+        <div class ="label">
+            
+             Type: Associated Tool
+            
+        </div>
+
+        
+        <div class = "authName">
+         Authors: Seaver, A.
+
+        </div >
+        
+
+
+        
+
+          <div class ="mainText">
+            Length Based Yield per Recruit (YPRLEN) is an implementation of the basic Thompson-Bell model for estimating the expected lifetime yield and biomass from a cohort subjected to varying levels of fishing mortality.  In the length-based model the user provides parameters of a von Bertalanffy growth equation. Age is taken as relative with the model starting at age zero. The user also provides parameters for equations relating weight, selectivity and maturity to length.  The user provides a small age step as an integration factor. This is converted to length by the von Bertalanffy equation and the other required data is derived from length.  This approach may in many cases provide a more accurate lifetime yield and biomass curve than the traditional age-based YPR model.  In the September 2004 update of YPRLEN, several alternative selectivity models were introduced.  Users can export an age-based file that can be used as input to the age-based YPR model.
+          </div>
+
+          <div class="mainText">
+              
+
+
+              
+
+              
+
+
+              
+
+              
+
+
+
+              <div class = "ref">
+              Code Repository Badges
+              </div>
+                  
+
+                      
+                          <img src="https://www.repostatus.org/badges/latest/inactive.svg">
+                      
+                  
+
+          </div>
+
+      </div>
+
+      <div class = "divider"></div>
+
+        <footer >
+             <img src="./static/noaa-fisheries-rgb-2line-horizontal-small.png" height="75" alt="NOAA Fisheries">
+         <div class="mywrap_center">
+          <a class ="mylink line" href="https://www.commerce.gov/">U.S. Department of Commerce</a>
+         <a class ="mylink line" href="https://www.noaa.gov">National Oceanographic and Atmospheric Administration</a>
+         <a class ="mylink" href="https://www.fisheries.noaa.gov/">NOAA Fisheries</a>
+         </div>
+
+        </footer>
+        <div class ="attribution">Icons by icons8 https://icons8.com/</div>
+
+    </div>
+
+
+</body>
+</html>
+

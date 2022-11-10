@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NOAA Fisheries A Bayesian approach for estimating trends of aggregated abundance</title>
+   <link type="text/css" rel="stylesheet" href="./static/tool_landing_page.css" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="mywrap">
+            <h1 class ="title">
+              A Bayesian approach for estimating trends of aggregated abundance
+            </h1>
+              
+              
+              <div class = "badge" data-md-tooltip=internal_inactive id = internal_inactive >
+              <!-- &#10039; -->
+              </div>
+              
+
+        </div>
+        <div class="mywrap">
+              
+                <button class = "codelink nolink" title="Online application unavailable">
+                Online Application
+                </button>
+              
+
+              
+              <button class = "codelink" title="link to download application" onclick=" window.open('https://github.com/dsjohnson/agTrend.gam#example', '_blank'); return false;">
+                Download Application
+                </button>
+              
+
+              
+                <button class = "codelink nolink" title="Documentation unavailable">
+                Documentation
+                </button>
+              
+
+              
+                <button class = "codelink nolink" title="Code Repository unavailable">
+                Code Repository
+                </button>
+              
+              <button class = "IconButton" title="e-mail fisheries.toolbox@noaa.gov" id ="email" onclick='location.href= "mailto:fisheries.toolbox@noaa.gov;"'>
+              </button>
+
+        </div>
+      <div class = "divider">
+      </div>
+
+
+      <div class ="main">
+        <div class="mywrap">
+              <div class ="label">
+                A Bayesian approach for estimating trends of aggregated abundance (agTrend)
+
+              </div>
+
+
+              
+
+
+              
+              
+              <img class = "versionButton" alt="GitHub release (latest by date)" src= https://img.shields.io/github/v/release/nmfs-fish-tools/agTrend?color=%230093D0&include_prereleases&label=%20>
+              
+
+
+        </div>
+
+        <div class ="label">
+            
+        </div>
+
+        
+        <div class = "authName">
+         Authors: Johnson, D.
+
+        </div >
+        
+
+
+        
+
+          <div class ="mainText">
+            agTrend fits a log-linear trend models to regions aggregated over sites. The sites may contain missing surveys that are not temporally aligned with the missing data at other sites, making direct aggregation impossible. The functions within the package model the indivdual sites with a semi-parametric model to interpolate missing data from which regional aggregations can be made. After model fitting, one can sample from the posterior predictive distribution of the regional aggregations Then calculate the log-linear trend over the time period of interest as a derived parameter. Using the posterior predictive distribution allows incorporation of both parameter uncertainty as well as uncertainty due to sampling the local abundance processes.
+          </div>
+
+          <div class="mainText">
+              
+
+
+              
+
+              
+
+
+              
+
+              
+
+
+
+              <div class = "ref">
+              Code Repository Badges
+              </div>
+                  
+
+          </div>
+
+      </div>
+
+      <div class = "divider"></div>
+
+        <footer >
+             <img src="./static/noaa-fisheries-rgb-2line-horizontal-small.png" height="75" alt="NOAA Fisheries">
+         <div class="mywrap_center">
+          <a class ="mylink line" href="https://www.commerce.gov/">U.S. Department of Commerce</a>
+         <a class ="mylink line" href="https://www.noaa.gov">National Oceanographic and Atmospheric Administration</a>
+         <a class ="mylink" href="https://www.fisheries.noaa.gov/">NOAA Fisheries</a>
+         </div>
+
+        </footer>
+        <div class ="attribution">Icons by icons8 https://icons8.com/</div>
+
+    </div>
+
+
+</body>
+</html>
+
