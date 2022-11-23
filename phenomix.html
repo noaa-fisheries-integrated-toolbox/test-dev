@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>NOAA Fisheries Stock Synthesis - Data Limited Tool</title>
+    <title>NOAA Fisheries phenomix</title>
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/noaa-fisheries-integrated-toolbox/FIT_graphics/main/FIT_logo/logo_pngs/FIT_favicon_2022_color.png">
    <link type="text/css" rel="stylesheet" href="./static/tool_landing_page.css" />
 
@@ -10,13 +10,13 @@
     <div class="container">
         <div class="mywrap">
             <h1 class ="title">
-              Stock Synthesis - Data Limited Tool
+              phenomix
             </h1>
               
               <div class = "badge"  data-md-tooltip="Legacy Tool - Adopted"  id = badge_external_active> </div>
               
               
-              <div class = "badge" data-md-tooltip=internal_active id = internal_active >
+              <div class = "badge" data-md-tooltip=external_active id = external_active >
               <!-- &#10039; -->
               </div>
               
@@ -30,13 +30,13 @@
               
 
               
-              <button class = "codelink" title="link to download application" onclick=" window.open('https://github.com/shcaba/SS-DL-tool', '_blank'); return false;">
+                <button class = "codelink nolink" title="Downloadable application unavailable">
                 Download Application
                 </button>
               
 
               
-               <button class = "codelink" title="link to website" onclick=" window.open('https://github.com/shcaba/SS-DL-tool', '_blank'); return false;">
+               <button class = "codelink" title="link to website" onclick=" window.open('https://ericward-noaa.github.io/phenomix/', '_blank'); return false;">
                 Website
                 </button>
               
@@ -49,7 +49,7 @@
               
 
               
-               <button class = "codelink" title="link to Code Repository" onclick=" window.open('https://github.com/shcaba/SS-DL-tool', '_blank'); return false;">
+               <button class = "codelink" title="link to Code Repository" onclick=" window.open('https://github.com/ericward-noaa/phenomix', '_blank'); return false;">
                 Code Repository
                 </button>
               
@@ -64,7 +64,7 @@
       <div class ="main">
         <div class="mywrap">
               <div class ="label">
-                Stock Synthesis - Data Limited Tool (SS-DL Tool)
+                phenomix (phenomix)
 
               </div>
 
@@ -73,9 +73,8 @@
 
 
               
-               <button class = "versionButton">
-                v3.30.13
-                </button>
+              
+              <img class = "versionButton" alt="GitHub release (latest by date)" src= https://img.shields.io/github/v/release/ericward-noaa/phenomix?color=%230093D0&include_prereleases&label=%20>
               
 
 
@@ -83,13 +82,11 @@
 
         <div class ="label">
             
-              Type:  Statistical Catch-at-Length
-              
         </div>
 
         
         <div class = "authName">
-         Authors: J. Cope
+         Authors: Ward, E. J.
 
         </div >
         
@@ -98,26 +95,13 @@
         
 
           <div class ="mainText">
-            The SS-DL tool uses Stock Synthesis to implement several common data-limited assessment methods all in one modelling framework. Under a unified modelling framework, additional data can be added as it becomes available. The tool builds Stock Synthesis files for provided data and life history information. It produces plots and tables for each model run via the r4ss package, as well as additional screen output for easy interpretation and provide a variety of additional applications to diagnose and explore model behavior.
+            The package phenomix provides a suite of curve fitting to describe phenology data that may be generated from a process when distributions in time might be concentrated (from fisheries, this occurs with things counts over time of salmon returning from the ocean to spawn or juvenile fish emigrating from streams to the ocean). For terrestrial applications, this may include times of flowering or leaf-out in plants or trees.
           </div>
 
           <div class="mainText">
               
 
 
-              
-                  <div class = "ref">
-                      Associated Tools
-                  </div>
-                  <ul id = "assocaited_tools">
-                      
-                          <li><a href="https://github.com/nmfs-stock-synthesis/stock-synthesis/"><i>Stock Synthesis</i></a></li>
-                      
-                          <li><a href="https://github.com/r4ss/r4ss"><i>r4ss</i></a></li>
-                      
-                          <li><a href="https://github.com/ss3sim/ss3sim"><i>ss3sim</i></a></li>
-                      
-                  </ul>
               
 
               
