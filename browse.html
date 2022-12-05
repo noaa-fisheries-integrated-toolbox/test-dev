@@ -39,27 +39,32 @@
 
 
 
-            <!-- <div class="tabs">
+            <div class="tabs">
               <div class="tab">
                 <input type="checkbox" id="chck1">
-                <label class="tab-label" for="chck1">Legacy Tool</label>
+                <label class="tab-label" for="chck1">Toolbox Drawer</label>
                 <div class="tab-content">
-                 <input type="button" value="Legacy Tool" onclick="simpleSearch(this.value)">
-                 <input type="button" value="Length structured" onclick="simpleSearch(this.value)">
-                 <input type="button" value="Age length structured" onclick="simpleSearch(this.value)">
+                  <input type="button" value="Ecosystem" onclick="drawerSearch('ecosystem')">
+                  <input type="button" value="Fish and Fisheries" onclick="drawerSearch('fisheries')">
+                  <input type="button" value="Human Dimensions" onclick="drawerSearch('human_dimensions')">
+                  <input type="button" value="Protected Resources" onclick="drawerSearch('protected_species')">
+                  <input type="button" value="General Modeling Tools" onclick="drawerSearch('general')">
                 </div>
               </div>
-              <div class="tab">
+              <!-- <div class="tab">
               <input type="button" value="Advanced estimation engine" onclick="simpleSearch(this.value)">
-            </div>
-              <div class="tab">
+            </div> -->
+              <!-- <div class="tab">
               <input type="button" value="Data simulator" onclick="simpleSearch(this.value)">
-            </div>
-              <div class="tab">
+            </div> -->
+              <!-- <div class="tab">
               <input type="button" value="Input Processor" onclick="simpleSearch(this.value)">
+            </div> -->
+
             </div>
 
-            </div> -->
+
+
             <div id = "menu" tabindex="-1">
 
               <div class = "box2">
@@ -113,6 +118,7 @@
               
               <a class = "shortTitle" href= 2BOX target= "_blank"> 2BOX </a>
               <div class = "longTitle">Dual Zone Virtual Population Analysis</div>
+              <div class = "toolbox_drawer">['fisheries']</div>
               <div class = "keywords">['Legacy Tool', 'Virtual Population Analysis', 'Stock Assessment Model']</div>
               <!-- <div class = "modelType">Stock Assessment Model</div>
               <div class = "modelType">Virtual Population Analysis</div> -->
@@ -160,6 +166,7 @@
               
               <a class = "shortTitle" href= AcousticThresholds target= "_blank"> AcousticThresholds </a>
               <div class = "longTitle">Technical Guidance for Assessing the Effects of Anthropogenic Sound on Marine Mammal Hearing </div>
+              <div class = "toolbox_drawer">['protected_species']</div>
               <div class = "keywords">['Web App', 'Marine Mammals']</div>
               <!-- <div class = "modelType"></div>
               <div class = "modelType"></div> -->
@@ -200,6 +207,7 @@
               
               <a class = "shortTitle" href= ADMB target= "_blank"> ADMB </a>
               <div class = "longTitle">AD Model Builder</div>
+              <div class = "toolbox_drawer">['general', 'fisheries']</div>
               <div class = "keywords">['Bayesian Modeling', 'Maximum Likelihood Estimation', 'Model Builder', 'Gradient Solver']</div>
               <!-- <div class = "modelType">Model Builder</div>
               <div class = "modelType"></div> -->
@@ -244,6 +252,7 @@
               
               <a class = "shortTitle" href= adnuts target= "_blank"> adnuts </a>
               <div class = "longTitle">AD no U-turn sampling</div>
+              <div class = "toolbox_drawer">['general', 'fisheries']</div>
               <div class = "keywords">['R package', 'Bayesian Modeling']</div>
               <!-- <div class = "modelType">Model Builder</div>
               <div class = "modelType"></div> -->
@@ -291,6 +300,7 @@
               
               <a class = "shortTitle" href= AGEPRO target= "_blank"> AGEPRO </a>
               <div class = "longTitle">Age Structured Projection Model</div>
+              <div class = "toolbox_drawer">['fisheries']</div>
               <div class = "keywords">['Stock Assessment Projections', 'Age-Structured', 'Guided User Interface']</div>
               <!-- <div class = "modelType">Statistical Catch-at-Age</div>
               <div class = "modelType">Stock assessment model</div> -->
@@ -338,6 +348,7 @@
               
               <a class = "shortTitle" href= agTrend target= "_blank"> agTrend </a>
               <div class = "longTitle">A Bayesian approach for estimating trends of aggregated abundance</div>
+              <div class = "toolbox_drawer">['protected_species', 'general']</div>
               <div class = "keywords">['R package']</div>
               <!-- <div class = "modelType"></div>
               <div class = "modelType"></div> -->
@@ -385,6 +396,7 @@
               
               <a class = "shortTitle" href= AIM target= "_blank"> AIM </a>
               <div class = "longTitle">An Index Method</div>
+              <div class = "toolbox_drawer">['fisheries']</div>
               <div class = "keywords">['Stock Assessment Model', 'Data Limited Method', 'Legacy Tool']</div>
               <!-- <div class = "modelType">Stock Assessment Model</div>
               <div class = "modelType">Index-Based</div> -->
@@ -432,6 +444,7 @@
               
               <a class = "shortTitle" href= ASAP target= "_blank"> ASAP </a>
               <div class = "longTitle">Age Structured Assessment Program</div>
+              <div class = "toolbox_drawer">['fisheries']</div>
               <div class = "keywords">['Stock Assessment Model', 'Age Structured Model', 'Guided User Interface', 'Legacy Tool']</div>
               <!-- <div class = "modelType">Stock Assessment Model</div>
               <div class = "modelType">Statistical Catch-at-Age</div> -->
@@ -479,6 +492,7 @@
               
               <a class = "shortTitle" href= ASPIC target= "_blank"> ASPIC </a>
               <div class = "longTitle">A Stock Production Model Incorporating Covariates</div>
+              <div class = "toolbox_drawer">['fisheries']</div>
               <div class = "keywords">['Stock Assessment Model', 'Surplus Production Model', 'Legacy Tool', 'Guided User Interface']</div>
               <!-- <div class = "modelType">Stock Assessment Model</div>
               <div class = "modelType">Aggregate Biomass Dynamics</div> -->
@@ -526,6 +540,7 @@
               
               <a class = "shortTitle" href= ATL target= "_blank"> ATL </a>
               <div class = "longTitle">Analytics Template Library</div>
+              <div class = "toolbox_drawer">['general']</div>
               <div class = "keywords">['Maximum Likelihood Estimation', 'Model Builder', 'Gradient Solver']</div>
               <!-- <div class = "modelType">Model Builder</div>
               <div class = "modelType"></div> -->
@@ -570,6 +585,7 @@
               
               <a class = "shortTitle" href= Atlantis target= "_blank"> Atlantis </a>
               <div class = "longTitle">Atlantis</div>
+              <div class = "toolbox_drawer">['ecosystem', 'fisheries']</div>
               <div class = "keywords">['Socioeconomics', 'Ecosystem']</div>
               <!-- <div class = "modelType">model</div>
               <div class = "modelType">ecosystem model</div> -->
@@ -614,6 +630,7 @@
               
               <a class = "shortTitle" href= atsar target= "_blank"> atsar </a>
               <div class = "longTitle">Applied time series analysis in R with Stan</div>
+              <div class = "toolbox_drawer">['general']</div>
               <div class = "keywords">['Baysian Modeling', 'Time Series', 'Teaching Tool', 'R package']</div>
               <!-- <div class = "modelType"></div>
               <div class = "modelType"></div> -->
@@ -661,6 +678,7 @@
               
               <a class = "shortTitle" href= bayesdfa target= "_blank"> bayesdfa </a>
               <div class = "longTitle">Bayesian Dynamic Factor Analysis with Stan</div>
+              <div class = "toolbox_drawer">['general']</div>
               <div class = "keywords">['Bayesian Modeling', 'Time Series', 'R package']</div>
               <!-- <div class = "modelType"></div>
               <div class = "modelType"></div> -->
@@ -708,6 +726,7 @@
               
               <a class = "shortTitle" href= bycatch target= "_blank"> bycatch </a>
               <div class = "longTitle">bycatch</div>
+              <div class = "toolbox_drawer">['protected_species', 'fisheries']</div>
               <div class = "keywords">['R package', 'Bayesian Modeling']</div>
               <!-- <div class = "modelType"></div>
               <div class = "modelType"></div> -->
@@ -755,6 +774,7 @@
               
               <a class = "shortTitle" href= CASAL2 target= "_blank"> CASAL2 </a>
               <div class = "longTitle">C++ Algorithmic Stock Assessment Laboratory version 2</div>
+              <div class = "toolbox_drawer">['fisheries']</div>
               <div class = "keywords">['C++', 'Stock Assessment Model', 'Age Structured Model']</div>
               <!-- <div class = "modelType">Stock Assessment Model</div>
               <div class = "modelType">Statistical Catch-at-Age</div> -->
@@ -799,6 +819,7 @@
               
               <a class = "shortTitle" href= CSA target= "_blank"> CSA </a>
               <div class = "longTitle">Collie-Sissenwine Analysis</div>
+              <div class = "toolbox_drawer">['fisheries']</div>
               <div class = "keywords">['Legacy Tool', 'Stock Assessment Model', 'Data Limited Method', 'Guided User Interface']</div>
               <!-- <div class = "modelType">Stock Assessment Model</div>
               <div class = "modelType">Data-Limited</div> -->
@@ -846,6 +867,7 @@
               
               <a class = "shortTitle" href= DCAC target= "_blank"> DCAC </a>
               <div class = "longTitle">Depletion-Corrected Average Catch</div>
+              <div class = "toolbox_drawer">['fisheries']</div>
               <div class = "keywords">['Stock Assessment Model', 'Data Limited Method', 'Legacy Tool']</div>
               <!-- <div class = "modelType">Stock Assessment Model</div>
               <div class = "modelType">Data-Limited</div> -->
@@ -893,6 +915,7 @@
               
               <a class = "shortTitle" href= DisMAP target= "_blank"> DisMAP </a>
               <div class = "longTitle">The Distribution Mapping and Analysis Portal</div>
+              <div class = "toolbox_drawer">['fisheries']</div>
               <div class = "keywords">['Web App']</div>
               <!-- <div class = "modelType"></div>
               <div class = "modelType"></div> -->
@@ -936,6 +959,7 @@
               
               <a class = "shortTitle" href= Donut_Tool target= "_blank"> Donut_Tool </a>
               <div class = "longTitle">Prey Preference and Diet Composition Tool</div>
+              <div class = "toolbox_drawer">['ecosystem']</div>
               <div class = "keywords">['Guided User Interface']</div>
               <!-- <div class = "modelType"></div>
               <div class = "modelType"></div> -->
@@ -983,6 +1007,7 @@
               
               <a class = "shortTitle" href= eSDM target= "_blank"> eSDM </a>
               <div class = "longTitle">Ensemble tool for predictions from Species Distribution Models</div>
+              <div class = "toolbox_drawer">['protected_species']</div>
               <div class = "keywords">['Web App', 'Shiny', 'Ensemble Modeling', 'R package']</div>
               <!-- <div class = "modelType"></div>
               <div class = "modelType"></div> -->
@@ -1026,6 +1051,7 @@
               
               <a class = "shortTitle" href= EwE target= "_blank"> EwE </a>
               <div class = "longTitle">Ecopath with Ecosim</div>
+              <div class = "toolbox_drawer">['ecosystem']</div>
               <div class = "keywords">['Ecosystem']</div>
               <!-- <div class = "modelType">modeling software suite</div>
               <div class = "modelType">ecological/ecosystem modeling</div> -->
@@ -1070,6 +1096,7 @@
               
               <a class = "shortTitle" href= FishEconProdOutput target= "_blank"> FishEconProdOutput </a>
               <div class = "longTitle">Price Method Fisheries Economics Total Factor Productivity Outputs for the U.S. Fisheries</div>
+              <div class = "toolbox_drawer">['human_dimensions']</div>
               <div class = "keywords">['Economics', 'R package']</div>
               <!-- <div class = "modelType"></div>
               <div class = "modelType"></div> -->
@@ -1117,6 +1144,7 @@
               
               <a class = "shortTitle" href= fisheye target= "_blank"> fisheye </a>
               <div class = "longTitle">Fisheries Economic Explorer</div>
+              <div class = "toolbox_drawer">['human_dimensions']</div>
               <div class = "keywords">['Web App', 'Economics']</div>
               <!-- <div class = "modelType">Analysis and Data Exploration</div>
               <div class = "modelType"></div> -->
@@ -1157,6 +1185,7 @@
               
               <a class = "shortTitle" href= FishLife target= "_blank"> FishLife </a>
               <div class = "longTitle">FishLife</div>
+              <div class = "toolbox_drawer">['general']</div>
               <div class = "keywords">['R Package', 'Fisheries', 'Fish Biology', 'Web App', 'Shiny']</div>
               <!-- <div class = "modelType"></div>
               <div class = "modelType"></div> -->
@@ -1200,6 +1229,7 @@
               
               <a class = "shortTitle" href= FishSET_Map_Viewer target= "_blank"> FishSET_Map_Viewer </a>
               <div class = "longTitle">FishSET-Map-Viewer</div>
+              <div class = "toolbox_drawer">['general']</div>
               <div class = "keywords">['Economics', 'Guided User Interface', 'Fisheries']</div>
               <!-- <div class = "modelType">Analysis</div>
               <div class = "modelType"></div> -->
@@ -1247,6 +1277,7 @@
               
               <a class = "shortTitle" href= GADGET target= "_blank"> GADGET </a>
               <div class = "longTitle">Globally applicable Area-Disaggregated General Ecosystem Toolbox</div>
+              <div class = "toolbox_drawer">['ecosystem', 'fisheries']</div>
               <div class = "keywords">['Ecosystem', 'Fisheries', 'Multispecies Model']</div>
               <!-- <div class = "modelType"></div>
               <div class = "modelType"></div> -->
@@ -1294,6 +1325,7 @@
               
               <a class = "shortTitle" href= ghactions4r target= "_blank"> ghactions4r </a>
               <div class = "longTitle">ghactions4r</div>
+              <div class = "toolbox_drawer">['general']</div>
               <div class = "keywords">['R package', 'Developer Utilities']</div>
               <!-- <div class = "modelType"></div>
               <div class = "modelType"></div> -->
@@ -1341,6 +1373,7 @@
               
               <a class = "shortTitle" href= ghBackup target= "_blank"> ghBackup </a>
               <div class = "longTitle">ghBackup</div>
+              <div class = "toolbox_drawer">['general']</div>
               <div class = "keywords">['R package', 'Developer Utilities']</div>
               <!-- <div class = "modelType"></div>
               <div class = "modelType"></div> -->
@@ -1388,6 +1421,7 @@
               
               <a class = "shortTitle" href= glmmfields target= "_blank"> glmmfields </a>
               <div class = "longTitle">Spatial GLMMs in R with Stan</div>
+              <div class = "toolbox_drawer">['general']</div>
               <div class = "keywords">['Bayesian Modeling', 'R package']</div>
               <!-- <div class = "modelType"></div>
               <div class = "modelType"></div> -->
@@ -1432,6 +1466,7 @@
               
               <a class = "shortTitle" href= GMACS target= "_blank"> GMACS </a>
               <div class = "longTitle">General Model for Assessing Crustacean Stocks</div>
+              <div class = "toolbox_drawer">['fisheries']</div>
               <div class = "keywords">['Size Structured Model', 'Stock Assessment Model']</div>
               <!-- <div class = "modelType">Stock Assessment Model</div>
               <div class = "modelType">Statistical Catch-at-Length</div> -->
@@ -1476,6 +1511,7 @@
               
               <a class = "shortTitle" href= IRATE target= "_blank"> IRATE </a>
               <div class = "longTitle">Instantaneous Rates</div>
+              <div class = "toolbox_drawer">['fisheries']</div>
               <div class = "keywords">['Legacy Tool', 'Tag Data Model']</div>
               <!-- <div class = "modelType">Associated Tool</div>
               <div class = "modelType"></div> -->
@@ -1523,6 +1559,7 @@
               
               <a class = "shortTitle" href= KALMAN target= "_blank"> KALMAN </a>
               <div class = "longTitle">Kalman Filter</div>
+              <div class = "toolbox_drawer">['general']</div>
               <div class = "keywords">['Time Series', 'Guided User Interface', 'Legacy Tool']</div>
               <!-- <div class = "modelType">Solver</div>
               <div class = "modelType"></div> -->
@@ -1570,6 +1607,7 @@
               
               <a class = "shortTitle" href= LHSampling target= "_blank"> LHSampling </a>
               <div class = "longTitle">Life History Sampling</div>
+              <div class = "toolbox_drawer">['fisheries']</div>
               <div class = "keywords">['Individual Based Model', 'Sampling Decision Tool', 'Spatial Model', 'R package']</div>
               <!-- <div class = "modelType"></div>
               <div class = "modelType"></div> -->
@@ -1617,6 +1655,7 @@
               
               <a class = "shortTitle" href= MARSS target= "_blank"> MARSS </a>
               <div class = "longTitle">Multivariate Autoregressive State-Space Modeling with R</div>
+              <div class = "toolbox_drawer">['general', 'protected_species']</div>
               <div class = "keywords">['Time Series', 'R Package']</div>
               <!-- <div class = "modelType"></div>
               <div class = "modelType"></div> -->
@@ -1661,6 +1700,7 @@
               
               <a class = "shortTitle" href= MCOMP target= "_blank"> MCOMP </a>
               <div class = "longTitle">Model Compare Utility</div>
+              <div class = "toolbox_drawer">['fisheries']</div>
               <div class = "keywords">['Model Comparision', 'Output Visualization', 'Guided User Interface', 'Legacy Tool']</div>
               <!-- <div class = "modelType">Model Comparison Tool</div>
               <div class = "modelType"></div> -->
@@ -1708,6 +1748,7 @@
               
               <a class = "shortTitle" href= MIZER target= "_blank"> MIZER </a>
               <div class = "longTitle">Multi-species size spectrum modelling in R</div>
+              <div class = "toolbox_drawer">['ecosystem']</div>
               <div class = "keywords">['R Package', 'Multispecies Modeling', 'Fisheries', 'Size Spectra Modeling']</div>
               <!-- <div class = "modelType">Model</div>
               <div class = "modelType">Multi-Species Size-Spectrum</div> -->
@@ -1755,6 +1796,7 @@
               
               <a class = "shortTitle" href= MSCAA target= "_blank"> MSCAA </a>
               <div class = "longTitle">Multi-Species Statistical Catch-At-Age</div>
+              <div class = "toolbox_drawer">['ecosystem', 'fisheries']</div>
               <div class = "keywords">['Multispecies Modeling', 'Fisheries', 'Guided User Interface', 'Output Visualization']</div>
               <!-- <div class = "modelType"></div>
               <div class = "modelType"></div> -->
@@ -1802,6 +1844,7 @@
               
               <a class = "shortTitle" href= MSE target= "_blank"> MSE </a>
               <div class = "longTitle">Management Strategy Evaluation</div>
+              <div class = "toolbox_drawer">['fisheries']</div>
               <div class = "keywords">['Management Strategy Evaluation', 'Guided User Interface', 'Simulation Tool', 'Risk Assessment Tool', 'Legacy Tool']</div>
               <!-- <div class = "modelType">Model Wrapper</div>
               <div class = "modelType"></div> -->
@@ -1849,6 +1892,7 @@
               
               <a class = "shortTitle" href= MSSPM target= "_blank"> MSSPM </a>
               <div class = "longTitle">Multi-Species Surplus Production Model</div>
+              <div class = "toolbox_drawer">['ecosystem', 'fisheries']</div>
               <div class = "keywords">['Surplus Production Modeling', 'Multispecies Modeling', 'Guided User Interface']</div>
               <!-- <div class = "modelType"></div>
               <div class = "modelType"></div> -->
@@ -1896,6 +1940,7 @@
               
               <a class = "shortTitle" href= MSVPA_X2 target= "_blank"> MSVPA_X2 </a>
               <div class = "longTitle">Multi-Species Virtual Population Analysis eXtended 2</div>
+              <div class = "toolbox_drawer">['ecosystem', 'fisheries']</div>
               <div class = "keywords">['Multispecies Modeling', 'Virtual Population Analysis', 'Guided User Interface']</div>
               <!-- <div class = "modelType"></div>
               <div class = "modelType"></div> -->
@@ -1943,6 +1988,7 @@
               
               <a class = "shortTitle" href= nmfSharedUtilities target= "_blank"> nmfSharedUtilities </a>
               <div class = "longTitle">nmfSharedUtilities</div>
+              <div class = "toolbox_drawer">['ecosystem', 'fisheries']</div>
               <div class = "keywords">['User Utilities', 'Guided User Interface', 'Multispecies Modeling']</div>
               <!-- <div class = "modelType"></div>
               <div class = "modelType"></div> -->
@@ -1990,6 +2036,7 @@
               
               <a class = "shortTitle" href= nmfspalette target= "_blank"> nmfspalette </a>
               <div class = "longTitle">nmfspalette</div>
+              <div class = "toolbox_drawer">['general']</div>
               <div class = "keywords">['User Utilities', 'Developer Utilities', 'NOAA Branding']</div>
               <!-- <div class = "modelType">Visualization</div>
               <div class = "modelType"></div> -->
@@ -2037,6 +2084,7 @@
               
               <a class = "shortTitle" href= NWCTrends target= "_blank"> NWCTrends </a>
               <div class = "longTitle">Standardized trends metrics in 2015 5-year Status Review Update for listed PNW salmonids</div>
+              <div class = "toolbox_drawer">['protected_species', 'fisheries']</div>
               <div class = "keywords">['Salmon', 'Time Series', 'R package', 'Standardized Reporting']</div>
               <!-- <div class = "modelType"></div>
               <div class = "modelType"></div> -->
@@ -2081,6 +2129,7 @@
               
               <a class = "shortTitle" href= ObsCovgTools target= "_blank"> ObsCovgTools </a>
               <div class = "longTitle">Observer Coverage Simulator Tool</div>
+              <div class = "toolbox_drawer">['protected_species', 'fisheries']</div>
               <div class = "keywords">['Bycatch', 'R package', 'Shiny', 'Guided User Interface']</div>
               <!-- <div class = "modelType"></div>
               <div class = "modelType"></div> -->
@@ -2124,6 +2173,7 @@
               
               <a class = "shortTitle" href= OSMOSE target= "_blank"> OSMOSE </a>
               <div class = "longTitle">Object-oriented Simulator of Marine Ecosystems</div>
+              <div class = "toolbox_drawer">['ecosystem', 'fisheries']</div>
               <div class = "keywords">['Simulation', 'Individual Based Model', 'Spatial Modeling']</div>
               <!-- <div class = "modelType"></div>
               <div class = "modelType"></div> -->
@@ -2171,6 +2221,7 @@
               
               <a class = "shortTitle" href= phenomix target= "_blank"> phenomix </a>
               <div class = "longTitle">phenomix</div>
+              <div class = "toolbox_drawer">['protected_species', 'fisheries']</div>
               <div class = "keywords">['Salmon', 'Time Series', 'Fisheries']</div>
               <!-- <div class = "modelType"></div>
               <div class = "modelType"></div> -->
@@ -2218,6 +2269,7 @@
               
               <a class = "shortTitle" href= POPSIM target= "_blank"> POPSIM </a>
               <div class = "longTitle">Population Simulator</div>
+              <div class = "toolbox_drawer">['fisheries']</div>
               <div class = "keywords">['Simulation Tool', 'Guided User Interface', 'Legacy Tool']</div>
               <!-- <div class = "modelType">Data Simulator</div>
               <div class = "modelType"></div> -->
@@ -2265,6 +2317,7 @@
               
               <a class = "shortTitle" href= POPSIM-A target= "_blank"> POPSIM-A </a>
               <div class = "longTitle">Age Population Simulator</div>
+              <div class = "toolbox_drawer">['fisheries']</div>
               <div class = "keywords">['Simulation Tool', 'Guided User Interface', 'Legacy Tool']</div>
               <!-- <div class = "modelType">Data Simulator</div>
               <div class = "modelType"></div> -->
@@ -2312,6 +2365,7 @@
               
               <a class = "shortTitle" href= POPSIM-L target= "_blank"> POPSIM-L </a>
               <div class = "longTitle">Length Population Simulator</div>
+              <div class = "toolbox_drawer">['fisheries']</div>
               <div class = "keywords">['Simulation Tool', 'Guided User Interface', 'Legacy Tool']</div>
               <!-- <div class = "modelType">Data Simulator</div>
               <div class = "modelType"></div> -->
@@ -2359,6 +2413,7 @@
               
               <a class = "shortTitle" href= PSA target= "_blank"> PSA </a>
               <div class = "longTitle">Productivity and Susceptibility Analysis</div>
+              <div class = "toolbox_drawer">['fisheries']</div>
               <div class = "keywords">['Risk Assessment Tool', 'Fisheries', 'Simulation Tool', 'Legacy Tool']</div>
               <!-- <div class = "modelType">Meta-Analysis Tool</div>
               <div class = "modelType">Risk Assessment Tool</div> -->
@@ -2406,6 +2461,7 @@
               
               <a class = "shortTitle" href= r4MAS target= "_blank"> r4MAS </a>
               <div class = "longTitle">R interface to Metapopulation Assessment System</div>
+              <div class = "toolbox_drawer">['fisheries']</div>
               <div class = "keywords">['Stock Assessment Model', 'R package']</div>
               <!-- <div class = "modelType">Input/Output Processor</div>
               <div class = "modelType"></div> -->
@@ -2453,6 +2509,7 @@
               
               <a class = "shortTitle" href= REIA target= "_blank"> REIA </a>
               <div class = "longTitle">Regional Economic Impact Analysis for North Pacific Fisheries</div>
+              <div class = "toolbox_drawer">['human_dimensions', 'fisheries']</div>
               <div class = "keywords">['Economics', 'North Pacific', 'Fisheries']</div>
               <!-- <div class = "modelType">Model</div>
               <div class = "modelType">Social Accounting Matrix Model </div> -->
@@ -2493,6 +2550,7 @@
               
               <a class = "shortTitle" href= REMORA target= "_blank"> REMORA </a>
               <div class = "longTitle">REsource Management Option Review and Analysis Tool</div>
+              <div class = "toolbox_drawer">['ecosystem']</div>
               <div class = "keywords">['Guided User Interface', 'Decision Support Tool', 'Projection Modeling']</div>
               <!-- <div class = "modelType"></div>
               <div class = "modelType"></div> -->
@@ -2540,6 +2598,7 @@
               
               <a class = "shortTitle" href= RIVARD target= "_blank"> RIVARD </a>
               <div class = "longTitle">Rivard Calculator</div>
+              <div class = "toolbox_drawer">['fisheries']</div>
               <div class = "keywords">['Calculator', 'User Utilities', 'Guided User Interface', 'Legacy Tool']</div>
               <!-- <div class = "modelType">Associated Tool</div>
               <div class = "modelType"></div> -->
@@ -2587,6 +2646,7 @@
               
               <a class = "shortTitle" href= RPATH target= "_blank"> RPATH </a>
               <div class = "longTitle">R implementation of the Ecopath with Ecosim</div>
+              <div class = "toolbox_drawer">['ecosystem', 'fisheries']</div>
               <div class = "keywords">['R Package', 'Multispecies', 'Ecosystem', 'Fisheries']</div>
               <!-- <div class = "modelType"></div>
               <div class = "modelType">mass balance food web algorithm</div> -->
@@ -2631,6 +2691,7 @@
               
               <a class = "shortTitle" href= SCALE target= "_blank"> SCALE </a>
               <div class = "longTitle">Statistical Catch at Length Model</div>
+              <div class = "toolbox_drawer">['fisheries']</div>
               <div class = "keywords">['Stock Assessment Model', 'Length Based Model', 'ADMB', 'Guided User Interface', 'Legacy Tool']</div>
               <!-- <div class = "modelType">Stock Assessment Model</div>
               <div class = "modelType">Statistical Catch-at-Length</div> -->
@@ -2678,6 +2739,7 @@
               
               <a class = "shortTitle" href= SEINE target= "_blank"> SEINE </a>
               <div class = "longTitle">Survival Estimation in Non-Equilibrium situations</div>
+              <div class = "toolbox_drawer">['fisheries']</div>
               <div class = "keywords">['Data Limited Methods', 'Stock Assessment Model', 'Guided User Interface', 'Natural Mortality Model', 'Legacy Tool']</div>
               <!-- <div class = "modelType">Stock Assessment Model</div>
               <div class = "modelType">Data-Limited</div> -->
@@ -2725,6 +2787,7 @@
               
               <a class = "shortTitle" href= SIFC target= "_blank"> SIFC </a>
               <div class = "longTitle">Social Indicators for Fishing Communities</div>
+              <div class = "toolbox_drawer">['human_dimensions']</div>
               <div class = "keywords">['Web App', 'Data Exploration', 'Socioeconomics']</div>
               <!-- <div class = "modelType">Mapping, Analysis, and Data Exploration</div>
               <div class = "modelType">Social Indicators</div> -->
@@ -2765,6 +2828,7 @@
               
               <a class = "shortTitle" href= SRFIT target= "_blank"> SRFIT </a>
               <div class = "longTitle">Stock Recruitment Fitting Model</div>
+              <div class = "toolbox_drawer">['fisheries']</div>
               <div class = "keywords">['Reference Points Model', 'ADMB', 'Bayesian Modeling', 'Guided User Interface', 'Legacy Tool']</div>
               <!-- <div class = "modelType">Associated Tool</div>
               <div class = "modelType"></div> -->
@@ -2812,6 +2876,7 @@
               
               <a class = "shortTitle" href= SS3 target= "_blank"> SS3 </a>
               <div class = "longTitle">Stock Synthesis</div>
+              <div class = "toolbox_drawer">['fisheries']</div>
               <div class = "keywords">['Stock Assessment Model', 'Age Structured Model', 'Length Structured Model', 'ADMB', 'Guided User Interface']</div>
               <!-- <div class = "modelType">Stock Assessment Model</div>
               <div class = "modelType">Statistical Catch-at-Length</div> -->
@@ -2855,6 +2920,7 @@
               
               <a class = "shortTitle" href= SS-DL_Tool target= "_blank"> SS-DL_Tool </a>
               <div class = "longTitle">Stock Synthesis - Data Limited Tool</div>
+              <div class = "toolbox_drawer">['fisheries']</div>
               <div class = "keywords">['Data Limited Methods', 'R package', 'Shiny', 'Web App', 'Guided User Interface', 'Stock Assessment Model']</div>
               <!-- <div class = "modelType">Stock Assessment Model</div>
               <div class = "modelType">Statistical Catch-at-Length</div> -->
@@ -2899,6 +2965,7 @@
               
               <a class = "shortTitle" href= SSMSE target= "_blank"> SSMSE </a>
               <div class = "longTitle">Management Strategy Evaluation for SS3</div>
+              <div class = "toolbox_drawer">['fisheries']</div>
               <div class = "keywords">['R Package', 'Management Strategy Evaluation', 'ADMB', 'Risk Analysis Tool', 'Decision Support Tool']</div>
               <!-- <div class = "modelType">Associated Tool</div>
               <div class = "modelType">Management Strategy Evaluation</div> -->
@@ -2946,6 +3013,7 @@
               
               <a class = "shortTitle" href= STATCAM target= "_blank"> STATCAM </a>
               <div class = "longTitle">Statistical Catch at Age Model</div>
+              <div class = "toolbox_drawer">['fisheries']</div>
               <div class = "keywords">['Age Based Model', 'ADMB', 'Guided User Interface', 'Legacy Tool']</div>
               <!-- <div class = "modelType">Stock Assessment Model</div>
               <div class = "modelType">Statistical Catch-at-Age</div> -->
@@ -2993,6 +3061,7 @@
               
               <a class = "shortTitle" href= StockSMART target= "_blank"> StockSMART </a>
               <div class = "longTitle">Stock Status, Management, Assessments & Resource Trends</div>
+              <div class = "toolbox_drawer">['fisheries']</div>
               <div class = "keywords">['Web App', 'Data Visualization']</div>
               <!-- <div class = "modelType">Stock Assessment Meta-Analysis</div>
               <div class = "modelType">Web Application</div> -->
@@ -3033,6 +3102,7 @@
               
               <a class = "shortTitle" href= VAST target= "_blank"> VAST </a>
               <div class = "longTitle">Vector Autoregressive Spatio-Temporal Model</div>
+              <div class = "toolbox_drawer">['general', 'fisheries']</div>
               <div class = "keywords">['Time Series', 'Spatial Model', 'TMB', 'Species Distribution Model']</div>
               <!-- <div class = "modelType"></div>
               <div class = "modelType"></div> -->
@@ -3080,6 +3150,7 @@
               
               <a class = "shortTitle" href= VES-V target= "_blank"> VES-V </a>
               <div class = "longTitle">Virtual Ecosystem Scenario Viewer</div>
+              <div class = "toolbox_drawer">['ecosystem', 'fisheries']</div>
               <div class = "keywords">['Guided User Interface', 'Visualization', 'Simulation', 'Fisheries']</div>
               <!-- <div class = "modelType">Visualization Tool</div>
               <div class = "modelType"></div> -->
@@ -3120,6 +3191,7 @@
               
               <a class = "shortTitle" href= VPA target= "_blank"> VPA </a>
               <div class = "longTitle">Virtual Population Analysis</div>
+              <div class = "toolbox_drawer">['fisheries']</div>
               <div class = "keywords">['Virtual Population Analysis', 'Stock Assessment Model', 'Guided User Interface', 'Legacy Tool']</div>
               <!-- <div class = "modelType">Stock Assessment Model</div>
               <div class = "modelType">Virtual Population Analysis</div> -->
@@ -3167,6 +3239,7 @@
               
               <a class = "shortTitle" href= VRAP target= "_blank"> VRAP </a>
               <div class = "longTitle">Viability and Risk Assessment Procedure</div>
+              <div class = "toolbox_drawer">['protected_species', 'fisheries']</div>
               <div class = "keywords">['Risk Assessment Tool', 'Simulation', 'Fisheries', 'R package', 'Shiny', 'Web App']</div>
               <!-- <div class = "modelType"></div>
               <div class = "modelType"></div> -->
@@ -3214,6 +3287,7 @@
               
               <a class = "shortTitle" href= VRD target= "_blank"> VRD </a>
               <div class = "longTitle">Visual Report Designer</div>
+              <div class = "toolbox_drawer">['fisheries']</div>
               <div class = "keywords">['Guided User Interface', 'User Utility', 'Legacy Tool']</div>
               <!-- <div class = "modelType">Reporting Tool</div>
               <div class = "modelType"></div> -->
@@ -3261,6 +3335,7 @@
               
               <a class = "shortTitle" href= WHAM target= "_blank"> WHAM </a>
               <div class = "longTitle">Woods Hole Assessment Model</div>
+              <div class = "toolbox_drawer">['fisheries']</div>
               <div class = "keywords">['Stock Assessment Model', 'Age Structured Model', 'TMB', 'R package']</div>
               <!-- <div class = "modelType">Stock Assessment Model</div>
               <div class = "modelType">Statistical Catch-at-Age</div> -->
@@ -3308,6 +3383,7 @@
               
               <a class = "shortTitle" href= YPR target= "_blank"> YPR </a>
               <div class = "longTitle">Yield Per Recruit</div>
+              <div class = "toolbox_drawer">['fisheries']</div>
               <div class = "keywords">['Reference Points Model', 'Stock Assessment', 'Legacy Tool', 'Visualization']</div>
               <!-- <div class = "modelType">Associated Tool</div>
               <div class = "modelType"></div> -->
@@ -3355,6 +3431,7 @@
               
               <a class = "shortTitle" href= YPRLEN target= "_blank"> YPRLEN </a>
               <div class = "longTitle">Length Based Yield Per Recruit</div>
+              <div class = "toolbox_drawer">['fisheries']</div>
               <div class = "keywords">['Reference Points Model', 'Stock Assessment', 'Legacy Tool', 'Visualization', 'Length Based Model']</div>
               <!-- <div class = "modelType">Associated Tool</div>
               <div class = "modelType"></div> -->
@@ -3446,8 +3523,29 @@
                 box_each = box[i].getElementsByClassName("longTitle")[0];
                 box_each_abbrev = box[i].getElementsByClassName("shortTitle")[0];
                 box_each_keywords = box[i].getElementsByClassName("keywords")[0];
-                console.log(box_each_keywords); // For Debugging 
+                //console.log(box_each_keywords); // For Debugging 
                 txtValue = box_each.textContent + " " + box_each_abbrev.innerText + " " + box_each_keywords.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    box[i].style.display = "";
+                } else {
+                    box[i].style.display = "none";
+                }
+            }
+        }
+
+        function drawerSearch(val) {
+            var input, filter, ul, box, box_each, box_each_abbrev, i, txtValue;
+            if(val === undefined){
+              input = document.getElementById("myInput");
+              filter = input.value.toUpperCase();
+            }
+            else {
+              filter = val.toUpperCase();
+            }
+            box = document.getElementsByClassName("box");
+            for (i = 0; i < box.length; i++) {
+                box_each = box[i].getElementsByClassName("toolbox_drawer")[0];
+                txtValue = box_each.textContent;
                 if (txtValue.toUpperCase().indexOf(filter) > -1) {
                     box[i].style.display = "";
                 } else {
