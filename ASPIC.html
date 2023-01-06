@@ -8,14 +8,25 @@
 </head>
 <body>
     <div class="container">
+      <div class="mywrap_head">
+        <img src="https://raw.githubusercontent.com/noaa-fisheries-integrated-toolbox/FIT_graphics/main/FIT_logo/logo_pngs/FIT_logo_2022_color_no_text.png" alt="NOAA Fisheries Integrated Toolbox Logo" height="75">&nbsp;&nbsp;&nbsp;
+        <h1 class ="header_title">NOAA Fisheries Integrated Toolbox</h1>
+    </div>
+    <div class = "divider"></div>
+      <div class ="mywrap_head">
+        <button class="header_button" onclick="location.href='/';" value="FIT homepage">FIT Homepage</button>
+        <button class="header_button" onclick="location.href='/resources';" value="Explore Resources" >Explore Resources</button>
+        <button class="header_button" onclick="location.href='/resources/noaa%20fit/contact';" value="Contact FIT" >Contact FIT</button>
+      </div>
+    <div class = "divider"></div>
         <div class="mywrap">
-            <h1 class ="title">
-              A Stock Production Model Incorporating Covariates
-            </h1>
+            <h2 class ="title">
+              Tool: A Stock Production Model Incorporating Covariates (ASPIC)
+            </h2>
               
               <!-- <div class = "badge" data-md-tooltip="Not Validated" id="greycheck"> -->
               <!-- &#10039; -->
-              </div>
+              <!-- </div> -->
               
 
         </div>
@@ -50,105 +61,83 @@
                 Code Repository
                 </button>
               
-              <button class = "IconButton" title="e-mail fisheries.toolbox@noaa.gov" id ="email" onclick='location.href= "mailto:fisheries.toolbox@noaa.gov;"'>
-              </button>
-
-        </div>
-      <div class = "divider">
-      </div>
-
-
-      <div class ="main">
-        <div class="mywrap">
-              <h2>
-                A Stock Production Model Incorporating Covariates (ASPIC)
-
-              </h2>
-
 
               
-
 
               
               
               <img class = "versionButton" alt="GitHub release (latest by date)" src= https://img.shields.io/github/v/release/nmfs-fish-tools/ASPIC?color=%230093D0&include_prereleases&label=%20>
               
 
-
         </div>
+      <div class = "divider_thin">
+      </div>
 
+
+      <div class ="main">
+          
         
-            <!--  -->
-        
-        
-        <h2>Authors</h2>
-        <div class = "authName">
+        <h3>Authors</h3>
+        <p>
         M. Prager
-        </div >
+        </p>
         
 
 
         
           
-          <h2>Description</h2>
-          <div class ="mainText">
+          <h3>Description</h3>
+          <p>
             A Stock Production Model Incorporating Covariates (ASPIC) is a non-equilibrium implementation of the well-known surplus production model of Schaefer (1954, 1957). ASPIC also fits the generalized stock production model of Pella and Tomlinson (1969) using the alternative parameterization of Fletcher (1978).The analytic engine for the ASPIC model, written by Dr. Michael Prager of the Southeast Fisheries Science Center, NMFS, incorporates several extensions to the classical stock-production models. ASPIC can fit data from up to 10 data series of fishery-dependent or fishery-independent indices, and uses bootstrapping to construct approximate nonparametric confidence intervals and to correct for bias. In addition, ASPIC can fit the model by varying the relative importance placed on yield versus measures of effort or indices of abundance. The model has been extensively reviewed and tested in the context of various applications to tuna stocks via the International Commission for the Conservation of Atlantic Tunas (ICCAT)  by Prager (1992 a, b). The model is more formally described in Prager (1994) and Quinn and Deriso (1999). Version 5.0 of ASPIC allows the user to estimate parameters by direct optimization, by grid search for model shape and by fixing model shape to fit the Fox (1970) model.ASPIC has been used as an assessment tool for swordfish (ICCAT), bluefin tuna (ICCAT), yellowtail flounder (NEFSC, NAFO), and fluke (NEFSC) among others.
-          </div>
-              
-                  <h2>References</h2>
-                  <ul>
-                      
-                          <li>Fox, W. W., Jr. 1971. Random variability and parameter estimation for the generalized production model. Fish. Bull. (U.S.) 69: 569–580.</li>
-                      
-                          <li>Pella, J. J. and P. K. Tomlinson 1969. A generalized stock production model. Bull. Inter-Am. Trop. Tuna Comm. 13: 419–496.</li>
-                      
-                          <li>Prager, M. H. 1992. ASPIC: A Surplus-Production Model Incorporating Covariates. Coll. Vol. Sci. Pap., Int. Comm. Conserv. Atl. Tunas (ICCAT) 28: 218–229.</li>
-                      
-                          <li>Prager, M. H. 1994. A suite of extensions to a nonequilibrium surplus-production model. Fish. Bull. (U.S.) 92: 374–389.</li>
-                      
-                          <li>Prager, M. H., C. Phillip Goodyear, and G. P. Scott. 1996. Application of a surplus-production model to a swordfish-like simulated stock with time-changing selectivity. Trans. AFS 125:729-740.</li>
-                      
-                          <li>Schaefer, M. B. 1957. A study of the dynamics of the fishery for yellowfin tuna in the eastern tropical Pacific Ocean. Inter-Am. Trop. Tuna Comm. Bull. 2: 247–268.</li>
-                      
-                  </ul>
-              
+          </p>
+          
+          <h3>References</h3>
+              <ul>
+                
+                <li>Fox, W. W., Jr. 1971. Random variability and parameter estimation for the generalized production model. Fish. Bull. (U.S.) 69: 569–580.</li>
+                
+                <li>Pella, J. J. and P. K. Tomlinson 1969. A generalized stock production model. Bull. Inter-Am. Trop. Tuna Comm. 13: 419–496.</li>
+                
+                <li>Prager, M. H. 1992. ASPIC: A Surplus-Production Model Incorporating Covariates. Coll. Vol. Sci. Pap., Int. Comm. Conserv. Atl. Tunas (ICCAT) 28: 218–229.</li>
+                
+                <li>Prager, M. H. 1994. A suite of extensions to a nonequilibrium surplus-production model. Fish. Bull. (U.S.) 92: 374–389.</li>
+                
+                <li>Prager, M. H., C. Phillip Goodyear, and G. P. Scott. 1996. Application of a surplus-production model to a swordfish-like simulated stock with time-changing selectivity. Trans. AFS 125:729-740.</li>
+                
+                <li>Schaefer, M. B. 1957. A study of the dynamics of the fishery for yellowfin tuna in the eastern tropical Pacific Ocean. Inter-Am. Trop. Tuna Comm. Bull. 2: 247–268.</li>
+                
+              </ul>
+         
 
 
-              
+          
 
-              
+          
 
-
-              
-
-              
-
-
-
-              <h2>
-              Code Repository Badges
-              </h2>
+          
+          
+          <h3>
+          Code Repository Badges
+          </h3>
+            
+            <img src="https://www.repostatus.org/badges/latest/inactive.svg">
+            
+          
                   
-
-                      
-                          <img src="https://www.repostatus.org/badges/latest/inactive.svg">
-                      
-                  
-                  
-            <h2>
-             Keywords
-            </h2>
-              
-                
-                  <li>Stock Assessment Model</li>
-                
-                  <li>Surplus Production Model</li>
-                
-                  <li>Legacy Tool</li>
-                
-                  <li>Guided User Interface</li>
-                
-                        
+          <h3>
+          Keywords
+          </h3>
+          
+          
+            <li>Stock Assessment Model</li>
+          
+            <li>Surplus Production Model</li>
+          
+            <li>Legacy Tool</li>
+          
+            <li>Guided User Interface</li>
+          
+                    
       </div>
 
       <div class = "divider"></div>

@@ -8,14 +8,25 @@
 </head>
 <body>
     <div class="container">
+      <div class="mywrap_head">
+        <img src="https://raw.githubusercontent.com/noaa-fisheries-integrated-toolbox/FIT_graphics/main/FIT_logo/logo_pngs/FIT_logo_2022_color_no_text.png" alt="NOAA Fisheries Integrated Toolbox Logo" height="75">&nbsp;&nbsp;&nbsp;
+        <h1 class ="header_title">NOAA Fisheries Integrated Toolbox</h1>
+    </div>
+    <div class = "divider"></div>
+      <div class ="mywrap_head">
+        <button class="header_button" onclick="location.href='/';" value="FIT homepage">FIT Homepage</button>
+        <button class="header_button" onclick="location.href='/resources';" value="Explore Resources" >Explore Resources</button>
+        <button class="header_button" onclick="location.href='/resources/noaa%20fit/contact';" value="Contact FIT" >Contact FIT</button>
+      </div>
+    <div class = "divider"></div>
         <div class="mywrap">
-            <h1 class ="title">
-              Stock Synthesis
-            </h1>
+            <h2 class ="title">
+              Tool: Stock Synthesis (SS3)
+            </h2>
               
               <!-- <div class = "badge" data-md-tooltip="Not Validated" id="greycheck"> -->
               <!-- &#10039; -->
-              </div>
+              <!-- </div> -->
               
 
         </div>
@@ -50,114 +61,92 @@
                 Code Repository
                 </button>
               
-              <button class = "IconButton" title="e-mail fisheries.toolbox@noaa.gov" id ="email" onclick='location.href= "mailto:fisheries.toolbox@noaa.gov;"'>
-              </button>
-
-        </div>
-      <div class = "divider">
-      </div>
-
-
-      <div class ="main">
-        <div class="mywrap">
-              <h2>
-                Stock Synthesis (SS3)
-
-              </h2>
-
 
               
-
 
               
               
               <img class = "versionButton" alt="GitHub release (latest by date)" src= https://img.shields.io/github/v/release/nmfs-stock-synthesis/stock-synthesis?color=%230093D0&include_prereleases&label=%20>
               
 
-
         </div>
+      <div class = "divider_thin">
+      </div>
 
+
+      <div class ="main">
+          
         
-            <!--  -->
-        
-        
-        <h2>Authors</h2>
-        <div class = "authName">
+        <h3>Authors</h3>
+        <p>
         R. Methot, C. Wetzel, I. Taylor, N. Schindler, and K. Doering
-        </div >
+        </p>
         
 
 
         
           
-          <h2>Description</h2>
-          <div class ="mainText">
+          <h3>Description</h3>
+          <p>
             Stock Synthesis (SS3) is an age- and size-structured assessment model in the class of models termed integrated analysis models. SS3 has a population sub-model that simulates a stock’s growth, movement, and mortality processes; an observation sub-model estimates expected values for various types of data; a statistical sub-model characterizes the data’s goodness of fit and obtains best-fitting parameters with associated variance; and a forecast sub-model projects needed management quantities. SS3 outputs the quantities, with confidence intervals, needed to implement risk-averse fishery control rules. The model is coded in C++ with parameter estimation enabled by automatic differentiation (www.admb-project.org). Windows, Linux, and iOS versions are available. Output processing and associated tools are in R, and a graphical interface is in QT. The rich feature set in SS3 allows it to be configured for a wide range of situations and it has become the basis for a large fraction of U.S. assessments and many other assessments around the world. 
-          </div>
+          </p>
+          
+          <h3>References</h3>
+              <ul>
+                
+                <li>SS reference: Methot and Wetzel 2013. Stock synthesis: A biological and statistical framework for fish stock assessment and fishery management. https://doi.org/10.1016/j.fishres.2012.10.012</li>
+                
+                <li>ADMB reference: Fournier, D.A., Skaug, H.J., Ancheta, J., Ianelli, J., Magnusson, A., Maunder, M.N., Nielsen, A., and Sibert, J. 2012. AD Model Builder: using automatic differentiation for statistical inference of highly parameterized complex nonlinear models. Optim. Methods Softw. 27:233-249.</li>
+                
+              </ul>
+         
+
+
+          
+          <h3>
+          Associated Tools
+          </h3>
+              <ul id = "associated_tools">
               
-                  <h2>References</h2>
-                  <ul>
-                      
-                          <li>SS reference: Methot and Wetzel 2013. Stock synthesis: A biological and statistical framework for fish stock assessment and fishery management. https://doi.org/10.1016/j.fishres.2012.10.012</li>
-                      
-                          <li>ADMB reference: Fournier, D.A., Skaug, H.J., Ancheta, J., Ianelli, J., Magnusson, A., Maunder, M.N., Nielsen, A., and Sibert, J. 2012. AD Model Builder: using automatic differentiation for statistical inference of highly parameterized complex nonlinear models. Optim. Methods Softw. 27:233-249.</li>
-                      
-                  </ul>
+                <li><a href="https://github.com/nmfs-stock-synthesis/ssi"><i>Stock Synthesis Interface (SSI, the SS GUI)</i></a></li>
               
-
-
+                <li><a href="https://github.com/r4ss/r4ss"><i>r4ss</i></a></li>
               
-                  <h2>
-                      Associated Tools
-                  </h2>
-                  <ul id = "associated_tools">
-                      
-                          <li><a href="https://github.com/nmfs-stock-synthesis/ssi"><i>Stock Synthesis Interface (SSI, the SS GUI)</i></a></li>
-                      
-                          <li><a href="https://github.com/r4ss/r4ss"><i>r4ss</i></a></li>
-                      
-                          <li><a href="https://github.com/ss3sim/ss3sim"><i>ss3sim</i></a></li>
-                      
-                          <li><a href="https://connect.fisheries.noaa.gov/ss3-helper/"><i>ss3 helper</i></a></li>
-                      
-                  </ul>
+                <li><a href="https://github.com/ss3sim/ss3sim"><i>ss3sim</i></a></li>
               
-
+                <li><a href="https://connect.fisheries.noaa.gov/ss3-helper/"><i>ss3 helper</i></a></li>
               
+              </ul>
+          
 
+          
 
-              
-
-              
-
-
-
-              <h2>
-              Code Repository Badges
-              </h2>
+          
+          
+          <h3>
+          Code Repository Badges
+          </h3>
+            
+            <img src="https://www.repostatus.org/badges/latest/active.svg">
+            
+          
                   
-
-                      
-                          <img src="https://www.repostatus.org/badges/latest/active.svg">
-                      
-                  
-                  
-            <h2>
-             Keywords
-            </h2>
-              
-                
-                  <li>Stock Assessment Model</li>
-                
-                  <li>Age Structured Model</li>
-                
-                  <li>Length Structured Model</li>
-                
-                  <li>ADMB</li>
-                
-                  <li>Guided User Interface</li>
-                
-                        
+          <h3>
+          Keywords
+          </h3>
+          
+          
+            <li>Stock Assessment Model</li>
+          
+            <li>Age Structured Model</li>
+          
+            <li>Length Structured Model</li>
+          
+            <li>ADMB</li>
+          
+            <li>Guided User Interface</li>
+          
+                    
       </div>
 
       <div class = "divider"></div>

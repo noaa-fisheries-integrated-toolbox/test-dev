@@ -8,14 +8,25 @@
 </head>
 <body>
     <div class="container">
+      <div class="mywrap_head">
+        <img src="https://raw.githubusercontent.com/noaa-fisheries-integrated-toolbox/FIT_graphics/main/FIT_logo/logo_pngs/FIT_logo_2022_color_no_text.png" alt="NOAA Fisheries Integrated Toolbox Logo" height="75">&nbsp;&nbsp;&nbsp;
+        <h1 class ="header_title">NOAA Fisheries Integrated Toolbox</h1>
+    </div>
+    <div class = "divider"></div>
+      <div class ="mywrap_head">
+        <button class="header_button" onclick="location.href='/';" value="FIT homepage">FIT Homepage</button>
+        <button class="header_button" onclick="location.href='/resources';" value="Explore Resources" >Explore Resources</button>
+        <button class="header_button" onclick="location.href='/resources/noaa%20fit/contact';" value="Contact FIT" >Contact FIT</button>
+      </div>
+    <div class = "divider"></div>
         <div class="mywrap">
-            <h1 class ="title">
-              FishLife
-            </h1>
+            <h2 class ="title">
+              Tool: FishLife (FishLife)
+            </h2>
               
               <!-- <div class = "badge" data-md-tooltip="Not Validated" id="greycheck"> -->
               <!-- &#10039; -->
-              </div>
+              <!-- </div> -->
               
 
         </div>
@@ -50,110 +61,88 @@
                 Code Repository
                 </button>
               
-              <button class = "IconButton" title="e-mail fisheries.toolbox@noaa.gov" id ="email" onclick='location.href= "mailto:fisheries.toolbox@noaa.gov;"'>
-              </button>
-
-        </div>
-      <div class = "divider">
-      </div>
-
-
-      <div class ="main">
-        <div class="mywrap">
-              <h2>
-                FishLife (FishLife)
-
-              </h2>
-
 
               
-
 
               
               
               <img class = "versionButton" alt="GitHub release (latest by date)" src= https://img.shields.io/github/v/release/James-Thorson-NOAA/FishLife?color=%230093D0&include_prereleases&label=%20>
               
 
-
         </div>
+      <div class = "divider_thin">
+      </div>
 
+
+      <div class ="main">
+          
         
-            <!--  -->
-        
-        
-        <h2>Authors</h2>
-        <div class = "authName">
+        <h3>Authors</h3>
+        <p>
         James T Thorson Stephan B. Munch, Jason M. Cope, Jin Gao
-        </div >
+        </p>
         
 
 
         
           
-          <h2>Description</h2>
-          <div class ="mainText">
+          <h3>Description</h3>
+          <p>
             FishLife is an R Package that includes software, data, and associated results for a simple evolutionary model of life-history parameters for fishes.  The model approximates the co-evolution of life-history parameters representing adult growth, size, mortality, and maturity, as well as stock-recruit parameters representing maximum spawners per spawner, Beverton-Holt 'steepness', and variability in recruitment.  Given these adult and stock-recruit predictions, the model can then predict life-cycle parameters including generation time, intrinsic growth rate, and fishing mortality reference point proxies. The model includes predictions of these life-history parameters (and associated multivariate predictive uncertainty) for all described fishes, while shrinking the predicted value of each parameter towards available data for that species, data for related species, and predicted values given available data for other parameters for that species.
-          </div>
+          </p>
+          
+          <h3>References</h3>
+              <ul>
+                
+                <li>Thorson, J.T., n.d. Predicting recruitment density dependence and intrinsic growth rate for all fishes worldwide using a data-integrated life-history model. Fish Fish. n/a. https://doi.org/10.1111/faf.12427</li>
+                
+                <li>Thorson, J.T., Munch, S.B., Cope, J.M., Gao, J., 2017. Predicting life history parameters for all fishes worldwide. Ecol. Appl. 27, 2262–2276. https://doi.org/10.1002/eap.1606</li>
+                
+                <li>Rudd, M.B., Thorson, J.T., Sagarese, S.R., 2019. Ensemble models for data-poor assessment: accounting for uncertainty in life-history information. ICES J. Mar. Sci. 76, 870–883. https://doi.org/10.1093/icesjms/fsz012</li>
+                
+              </ul>
+         
+
+
+          
+          <h3>
+          Associated Tools
+          </h3>
+              <ul id = "associated_tools">
               
-                  <h2>References</h2>
-                  <ul>
-                      
-                          <li>Thorson, J.T., n.d. Predicting recruitment density dependence and intrinsic growth rate for all fishes worldwide using a data-integrated life-history model. Fish Fish. n/a. https://doi.org/10.1111/faf.12427</li>
-                      
-                          <li>Thorson, J.T., Munch, S.B., Cope, J.M., Gao, J., 2017. Predicting life history parameters for all fishes worldwide. Ecol. Appl. 27, 2262–2276. https://doi.org/10.1002/eap.1606</li>
-                      
-                          <li>Rudd, M.B., Thorson, J.T., Sagarese, S.R., 2019. Ensemble models for data-poor assessment: accounting for uncertainty in life-history information. ICES J. Mar. Sci. 76, 870–883. https://doi.org/10.1093/icesjms/fsz012</li>
-                      
-                  </ul>
+                <li><a href="https://github.com/merrillrudd/LIME"><i>LIME</i></a></li>
               
+              </ul>
+          
 
+          
 
-              
-                  <h2>
-                      Associated Tools
-                  </h2>
-                  <ul id = "associated_tools">
-                      
-                          <li><a href="https://github.com/merrillrudd/LIME"><i>LIME</i></a></li>
-                      
-                  </ul>
-              
-
-              
-
-
-              
-
-              
-
-
-
-              <h2>
-              Code Repository Badges
-              </h2>
+          
+          
+          <h3>
+          Code Repository Badges
+          </h3>
+            
+            <img src="https://img.shields.io/github/last-commit/James-Thorson-NOAA/FishLife.svg?style=plastic">
+            
+          
                   
-
-                      
-                          <img src="https://img.shields.io/github/last-commit/James-Thorson-NOAA/FishLife.svg?style=plastic">
-                      
-                  
-                  
-            <h2>
-             Keywords
-            </h2>
-              
-                
-                  <li>R Package</li>
-                
-                  <li>Fish and Fisheries</li>
-                
-                  <li>Fish Biology</li>
-                
-                  <li>Web App</li>
-                
-                  <li>Shiny</li>
-                
-                        
+          <h3>
+          Keywords
+          </h3>
+          
+          
+            <li>R Package</li>
+          
+            <li>Fish and Fisheries</li>
+          
+            <li>Fish Biology</li>
+          
+            <li>Web App</li>
+          
+            <li>Shiny</li>
+          
+                    
       </div>
 
       <div class = "divider"></div>

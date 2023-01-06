@@ -8,14 +8,25 @@
 </head>
 <body>
     <div class="container">
+      <div class="mywrap_head">
+        <img src="https://raw.githubusercontent.com/noaa-fisheries-integrated-toolbox/FIT_graphics/main/FIT_logo/logo_pngs/FIT_logo_2022_color_no_text.png" alt="NOAA Fisheries Integrated Toolbox Logo" height="75">&nbsp;&nbsp;&nbsp;
+        <h1 class ="header_title">NOAA Fisheries Integrated Toolbox</h1>
+    </div>
+    <div class = "divider"></div>
+      <div class ="mywrap_head">
+        <button class="header_button" onclick="location.href='/';" value="FIT homepage">FIT Homepage</button>
+        <button class="header_button" onclick="location.href='/resources';" value="Explore Resources" >Explore Resources</button>
+        <button class="header_button" onclick="location.href='/resources/noaa%20fit/contact';" value="Contact FIT" >Contact FIT</button>
+      </div>
+    <div class = "divider"></div>
         <div class="mywrap">
-            <h1 class ="title">
-              Woods Hole Assessment Model
-            </h1>
+            <h2 class ="title">
+              Tool: Woods Hole Assessment Model (WHAM)
+            </h2>
               
               <!-- <div class = "badge" data-md-tooltip="Not Validated" id="greycheck"> -->
               <!-- &#10039; -->
-              </div>
+              <!-- </div> -->
               
 
         </div>
@@ -50,108 +61,86 @@
                 Code Repository
                 </button>
               
-              <button class = "IconButton" title="e-mail fisheries.toolbox@noaa.gov" id ="email" onclick='location.href= "mailto:fisheries.toolbox@noaa.gov;"'>
-              </button>
-
-        </div>
-      <div class = "divider">
-      </div>
-
-
-      <div class ="main">
-        <div class="mywrap">
-              <h2>
-                Woods Hole Assessment Model (WHAM)
-
-              </h2>
-
 
               
-
 
               
               
               <img class = "versionButton" alt="GitHub release (latest by date)" src= https://img.shields.io/github/v/release/timjmiller/wham?color=%230093D0&include_prereleases&label=%20>
               
 
-
         </div>
+      <div class = "divider_thin">
+      </div>
 
+
+      <div class ="main">
+          
         
-            <!--  -->
-        
-        
-        <h2>Authors</h2>
-        <div class = "authName">
+        <h3>Authors</h3>
+        <p>
         Tim Miller and Brian Stock
-        </div >
+        </p>
         
 
 
         
           
-          <h2>Description</h2>
-          <div class ="mainText">
+          <h3>Description</h3>
+          <p>
             A state-space age-structured assessment model that can include state-space covariate models and effects on recruitment and internal estimation of biological reference points. See the vignettes provided with the package for example applications.
-          </div>
+          </p>
+          
+          <h3>References</h3>
+              <ul>
+                
+                <li>Miller, T. J., Hare, J. A., and Alade, L. A. 2016. A state-space approach to incorporating environmental effects on recruitment in an age-structured assessment model with an application to Southern New England yellowtail flounder. Canadian Journal of Fisheries and Aquatic Sciences 73(8): 1261-1270. doi: 10.1139/cjfas-2015-0339</li>
+                
+                <li>Miller, T. J. and Hyun, S-Y. 2018. Evaluating evidence for alternative natural mortality and process error assumptions using a state-space, age-structured assessment model. Canadian Journal of Fisheries and Aquatic Sciences 75(5): 691-703. doi: 10.1139/cjfas-2017-0035</li>
+                
+                <li>Miller, T. J., O’Brien, L., and Fratantoni, P. S. 2018. Temporal and environmental variation in growth and maturity and effects on management reference points of Georges Bank Atlantic cod. Canadian Journal of Fisheries and Aquatic Sciences 75(12): 2159-2171. doi: 10.1139/cjfas-2017-0124</li>
+                
+              </ul>
+         
+
+
+          
+          <h3>
+          Associated Tools
+          </h3>
+              <ul id = "associated_tools">
               
-                  <h2>References</h2>
-                  <ul>
-                      
-                          <li>Miller, T. J., Hare, J. A., and Alade, L. A. 2016. A state-space approach to incorporating environmental effects on recruitment in an age-structured assessment model with an application to Southern New England yellowtail flounder. Canadian Journal of Fisheries and Aquatic Sciences 73(8): 1261-1270. doi: 10.1139/cjfas-2015-0339</li>
-                      
-                          <li>Miller, T. J. and Hyun, S-Y. 2018. Evaluating evidence for alternative natural mortality and process error assumptions using a state-space, age-structured assessment model. Canadian Journal of Fisheries and Aquatic Sciences 75(5): 691-703. doi: 10.1139/cjfas-2017-0035</li>
-                      
-                          <li>Miller, T. J., O’Brien, L., and Fratantoni, P. S. 2018. Temporal and environmental variation in growth and maturity and effects on management reference points of Georges Bank Atlantic cod. Canadian Journal of Fisheries and Aquatic Sciences 75(12): 2159-2171. doi: 10.1139/cjfas-2017-0124</li>
-                      
-                  </ul>
+                <li><a href="https://github.com/kaskr/adcomp"><i>Template Model Builder</i></a></li>
               
+              </ul>
+          
 
+          
 
-              
-                  <h2>
-                      Associated Tools
-                  </h2>
-                  <ul id = "associated_tools">
-                      
-                          <li><a href="https://github.com/kaskr/adcomp"><i>Template Model Builder</i></a></li>
-                      
-                  </ul>
-              
-
-              
-
-
-              
-
-              
-
-
-
-              <h2>
-              Code Repository Badges
-              </h2>
+          
+          
+          <h3>
+          Code Repository Badges
+          </h3>
+            
+            <img src="https://www.repostatus.org/badges/latest/active.svg">
+            
+          
                   
-
-                      
-                          <img src="https://www.repostatus.org/badges/latest/active.svg">
-                      
-                  
-                  
-            <h2>
-             Keywords
-            </h2>
-              
-                
-                  <li>Stock Assessment Model</li>
-                
-                  <li>Age Structured Model</li>
-                
-                  <li>TMB</li>
-                
-                  <li>R Package</li>
-                
-                        
+          <h3>
+          Keywords
+          </h3>
+          
+          
+            <li>Stock Assessment Model</li>
+          
+            <li>Age Structured Model</li>
+          
+            <li>TMB</li>
+          
+            <li>R Package</li>
+          
+                    
       </div>
 
       <div class = "divider"></div>

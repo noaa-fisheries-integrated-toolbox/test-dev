@@ -8,14 +8,25 @@
 </head>
 <body>
     <div class="container">
+      <div class="mywrap_head">
+        <img src="https://raw.githubusercontent.com/noaa-fisheries-integrated-toolbox/FIT_graphics/main/FIT_logo/logo_pngs/FIT_logo_2022_color_no_text.png" alt="NOAA Fisheries Integrated Toolbox Logo" height="75">&nbsp;&nbsp;&nbsp;
+        <h1 class ="header_title">NOAA Fisheries Integrated Toolbox</h1>
+    </div>
+    <div class = "divider"></div>
+      <div class ="mywrap_head">
+        <button class="header_button" onclick="location.href='/';" value="FIT homepage">FIT Homepage</button>
+        <button class="header_button" onclick="location.href='/resources';" value="Explore Resources" >Explore Resources</button>
+        <button class="header_button" onclick="location.href='/resources/noaa%20fit/contact';" value="Contact FIT" >Contact FIT</button>
+      </div>
+    <div class = "divider"></div>
         <div class="mywrap">
-            <h1 class ="title">
-              Age Population Simulator
-            </h1>
+            <h2 class ="title">
+              Tool: Age Population Simulator (POPSIM-A)
+            </h2>
               
               <!-- <div class = "badge" data-md-tooltip="Not Validated" id="greycheck"> -->
               <!-- &#10039; -->
-              </div>
+              <!-- </div> -->
               
 
         </div>
@@ -50,86 +61,64 @@
                 Code Repository
                 </button>
               
-              <button class = "IconButton" title="e-mail fisheries.toolbox@noaa.gov" id ="email" onclick='location.href= "mailto:fisheries.toolbox@noaa.gov;"'>
-              </button>
-
-        </div>
-      <div class = "divider">
-      </div>
-
-
-      <div class ="main">
-        <div class="mywrap">
-              <h2>
-                Age Population Simulator (POPSIM-A)
-
-              </h2>
-
 
               
-
 
               
               
               <img class = "versionButton" alt="GitHub release (latest by date)" src= https://img.shields.io/github/v/release/nmfs-fish-tools/POPSIM-A?color=%230093D0&include_prereleases&label=%20>
               
 
-
         </div>
+      <div class = "divider_thin">
+      </div>
 
+
+      <div class ="main">
+          
         
-            <!--  -->
-        
-        
-        <h2>Authors</h2>
-        <div class = "authName">
+        <h3>Authors</h3>
+        <p>
         Seaver, A.
-        </div >
+        </p>
         
 
 
         
           
-          <h2>Description</h2>
-          <div class ="mainText">
+          <h3>Description</h3>
+          <p>
             The Age Based Population Simulator (POPSIM-A) is a general data simulator designed to allow users to create populations with known underlying parameters and error structure. The program can be used to reveal the limitations of alternative estimation methods. These considerations are particularly important where model misspecification can lead to widely varying results. This simulator should have general utility for examining tradeoffs among model dimensionality, degree of fit, and generality.  The user specifies weights, maturity, natural mortality, fishery selectivity, and discard fraction at age.  The program supports multiple fleets and flexible harvest scenarios.  The user specifies the fully recruited fishing mortality and natural mortality in each year of the model.  The population is developed as length by age matrix for each year as a forward projecting model.  The user may specify recruitment either as a vector of annual recruitment or Beverton-Holt, Ricker or Shepherd stock recruitment functions.  Alternatively, the user may specify either a 1-stage or 2-stage empirical cumulative distribution function.  The user may specify “surveys” of abundance based on applying log-normal error to the “true” populations in each year. Both “East Coast” (age-specific) and “West Coast” (age-aggregated) tuning indices can be created from the survey information.  Catch samples are developed by random sampling from a multinomial age distribution.  The resulting stochastic realizations can be used to automatically generate datasets for input to VPA/ADAPT, CSA, ASPIC, and ASAP.  Because the “surveys” with error are independent of how they are applied as indices of abundance in the estimation model, the same random error is being applied on each realization independent of the model being evaluated.  Thus, multiple models can be compared in their relative ability to recover the “true state of nature”.  POPSIM can be used to verify that the estimation models can recover the true parameters and the limitations of various models when their underlying assumptions are violated. The simulator is designed to allow users to rapidly compare the relative merits of alternative modeling approaches. The user interface allows for complete graphical analysis of input and output data.
-          </div>
-              
+          </p>
+          
 
 
-              
+          
 
-              
+          
 
-
-              
-
-              
-
-
-
-              <h2>
-              Code Repository Badges
-              </h2>
+          
+          
+          <h3>
+          Code Repository Badges
+          </h3>
+            
+            <img src="https://www.repostatus.org/badges/latest/inactive.svg">
+            
+          
                   
-
-                      
-                          <img src="https://www.repostatus.org/badges/latest/inactive.svg">
-                      
-                  
-                  
-            <h2>
-             Keywords
-            </h2>
-              
-                
-                  <li>Simulation</li>
-                
-                  <li>Guided User Interface</li>
-                
-                  <li>Legacy Tool</li>
-                
-                        
+          <h3>
+          Keywords
+          </h3>
+          
+          
+            <li>Simulation</li>
+          
+            <li>Guided User Interface</li>
+          
+            <li>Legacy Tool</li>
+          
+                    
       </div>
 
       <div class = "divider"></div>

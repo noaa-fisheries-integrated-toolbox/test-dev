@@ -8,14 +8,25 @@
 </head>
 <body>
     <div class="container">
+      <div class="mywrap_head">
+        <img src="https://raw.githubusercontent.com/noaa-fisheries-integrated-toolbox/FIT_graphics/main/FIT_logo/logo_pngs/FIT_logo_2022_color_no_text.png" alt="NOAA Fisheries Integrated Toolbox Logo" height="75">&nbsp;&nbsp;&nbsp;
+        <h1 class ="header_title">NOAA Fisheries Integrated Toolbox</h1>
+    </div>
+    <div class = "divider"></div>
+      <div class ="mywrap_head">
+        <button class="header_button" onclick="location.href='/';" value="FIT homepage">FIT Homepage</button>
+        <button class="header_button" onclick="location.href='/resources';" value="Explore Resources" >Explore Resources</button>
+        <button class="header_button" onclick="location.href='/resources/noaa%20fit/contact';" value="Contact FIT" >Contact FIT</button>
+      </div>
+    <div class = "divider"></div>
         <div class="mywrap">
-            <h1 class ="title">
-              Statistical Catch at Length Model
-            </h1>
+            <h2 class ="title">
+              Tool: Statistical Catch at Length Model (SCALE)
+            </h2>
               
               <!-- <div class = "badge" data-md-tooltip="Not Validated" id="greycheck"> -->
               <!-- &#10039; -->
-              </div>
+              <!-- </div> -->
               
 
         </div>
@@ -50,116 +61,94 @@
                 Code Repository
                 </button>
               
-              <button class = "IconButton" title="e-mail fisheries.toolbox@noaa.gov" id ="email" onclick='location.href= "mailto:fisheries.toolbox@noaa.gov;"'>
-              </button>
-
-        </div>
-      <div class = "divider">
-      </div>
-
-
-      <div class ="main">
-        <div class="mywrap">
-              <h2>
-                Statistical Catch at Length Model (SCALE)
-
-              </h2>
-
 
               
-
 
               
               
               <img class = "versionButton" alt="GitHub release (latest by date)" src= https://img.shields.io/github/v/release/nmfs-fish-tools/SCALE?color=%230093D0&include_prereleases&label=%20>
               
 
-
         </div>
+      <div class = "divider_thin">
+      </div>
 
+
+      <div class ="main">
+          
         
-            <!--  -->
-        
-        
-        <h2>Authors</h2>
-        <div class = "authName">
+        <h3>Authors</h3>
+        <p>
         Nitscke, P. and C. Legault
-        </div >
+        </p>
         
 
 
         
           
-          <h2>Description</h2>
-          <div class ="mainText">
+          <h3>Description</h3>
+          <p>
             Incomplete or lack of age-specific catch and survey indices often limits the application of a full age-structured assessment (e.g. Virtual Population Analysis and many forward projecting age-structured models).  Stock assessments will often rely on the simpler size/age aggregated models (e.g. surplus production models) when age-specific information is lacking.  However the simpler size/age aggregated models may not utilize all of the available information for a stock assessment.  Knowledge of a species growth and lifespan, along with total catch data, size composition of the removals, recruitment indices and indices on numbers and size composition of the large fish in a survey can provide insights on population status using a simple model framework.  The Statistical Catch At LEngth (SCALE) model, previously known as the Length Tuned Model (LTM), is a forward projecting age-structured model tuned with total catch (mt), catch at length or proportional catch at length, recruitment at a specified age (usually estimated from first length mode in the survey), survey indices of abundance of the larger/older fish (usually adult fish) and the survey length frequency distributions.  The SCALE model was developed in the AD model builder framework.  The model parameter estimates are fishing mortality and recruitment in each year, fishing mortality to produce the initial population (Fstart), logistic selectivity parameters for each year or blocks of years and Qs for each survey index.  The SCALE model was developed as an age-structured model that does not rely on age-specific information on a yearly basis.  The model is designed to fit length information, abundance indices, and recruitment at age which can be estimated by using survey length slicing.  However the model does require an accurate representation of the average overall growth of the population which is input to the model as mean lengths at age.  Growth can be modeled as sex-specific growth and natural mortality or growth and natural mortality can be model with the sexes combined.  The SCALE model will allow for missing data.  The SCALE model can be used in two different ways.  First, the model can be used as a stock assessment tool for a species which has overall growth information, abundance indices at length, total removals, and size information of the catch but may not possess production ageing on a yearly basis.  Second, the model can be used as a diagnostic tool for comparison to other fully age-structured models that are tuned with age-specific data.  Failure of the SCALE model in fitting observed length information over time can provide insight on inaccuracies in the basic life history understanding of a population.  For example, if a SCALE model consistently predicts larger fish then were observed during a time period when fishing mortality if thought to be low then these results can suggest a possible overestimation in growth of the larger/older fish which intern may help explain the fully age-specific model results.  SCALE/LTM has been used as an exploratory assessment tool for Black Sea Bass (NEFSC), Spiny Dogfish (NEFSC), and Thorny skate (NEFSC).  SCALE was used for status determination in the Monkfish stock assessment.  The calculation engine was built using AD Model Builder by Paul Nitschke and Dr. Christopher M. Legault (currently at the NMFS Northeast Fisheries Science Center in Woods Hole, MA). The graphic interface was also developed at the NMFS Northeast Fisheries Science Center in Woods Hole, MA.
-          </div>
+          </p>
+          
+          <h3>References</h3>
+              <ul>
+                
+                <li>43rd Northeast Regional Stock Assessment Workshop (43rd SAW): 43rd SAW assessment summary report. US Dep. Commer., Northeast Fish. Sci. Cent. Ref. Doc. 06-14; 46 p.</li>
+                
+                <li>43rd Northeast Regional Stock Assessment Workshop (43rd SAW): 43rd SAW assessment report. US Dep Commer, Northeast Fish Sci Cent Ref Doc 06-25; 400 p.</li>
+                
+                <li>44th Northeast Regional Stock Assessment Workshop (44th SAW). 2007. 44th SAW assessment summary report. US Dep Commer, Northeast Fish Sci Cent Ref Doc. </li>
+                
+                <li>44th Northeast Regional Stock Assessment Workshop (44th SAW): 44th SAW assessment report. US Dep Commer, Northeast Fish Sci Cent Ref Doc 07-10; 661 p.</li>
+                
+                <li>Northeast Data Poor Stocks Working Group. 2007. Monkfish assessment summary for 2007. US Dep Commer, Northeast Fish Sci Cent Ref Doc. 07-13; 12 p.</li>
+                
+                <li>Northeast Data Poor Stocks Working Group. 2007. Monkfish assessment report for 2007. US Dep Commer, Northeast Fish Sci Cent Ref Doc 07-21; 232 p.</li>
+                
+              </ul>
+         
+
+
+          
+          <h3>
+          Associated Tools
+          </h3>
+              <ul id = "associated_tools">
               
-                  <h2>References</h2>
-                  <ul>
-                      
-                          <li>43rd Northeast Regional Stock Assessment Workshop (43rd SAW): 43rd SAW assessment summary report. US Dep. Commer., Northeast Fish. Sci. Cent. Ref. Doc. 06-14; 46 p.</li>
-                      
-                          <li>43rd Northeast Regional Stock Assessment Workshop (43rd SAW): 43rd SAW assessment report. US Dep Commer, Northeast Fish Sci Cent Ref Doc 06-25; 400 p.</li>
-                      
-                          <li>44th Northeast Regional Stock Assessment Workshop (44th SAW). 2007. 44th SAW assessment summary report. US Dep Commer, Northeast Fish Sci Cent Ref Doc. </li>
-                      
-                          <li>44th Northeast Regional Stock Assessment Workshop (44th SAW): 44th SAW assessment report. US Dep Commer, Northeast Fish Sci Cent Ref Doc 07-10; 661 p.</li>
-                      
-                          <li>Northeast Data Poor Stocks Working Group. 2007. Monkfish assessment summary for 2007. US Dep Commer, Northeast Fish Sci Cent Ref Doc. 07-13; 12 p.</li>
-                      
-                          <li>Northeast Data Poor Stocks Working Group. 2007. Monkfish assessment report for 2007. US Dep Commer, Northeast Fish Sci Cent Ref Doc 07-21; 232 p.</li>
-                      
-                  </ul>
+                <li><a href="https://www.admb-project.org"><i>ADMB</i></a></li>
               
+              </ul>
+          
 
+          
 
-              
-                  <h2>
-                      Associated Tools
-                  </h2>
-                  <ul id = "associated_tools">
-                      
-                          <li><a href="https://www.admb-project.org"><i>ADMB</i></a></li>
-                      
-                  </ul>
-              
-
-              
-
-
-              
-
-              
-
-
-
-              <h2>
-              Code Repository Badges
-              </h2>
+          
+          
+          <h3>
+          Code Repository Badges
+          </h3>
+            
+            <img src="https://www.repostatus.org/badges/latest/inactive.svg">
+            
+          
                   
-
-                      
-                          <img src="https://www.repostatus.org/badges/latest/inactive.svg">
-                      
-                  
-                  
-            <h2>
-             Keywords
-            </h2>
-              
-                
-                  <li>Stock Assessment Model</li>
-                
-                  <li>Length Structured Model</li>
-                
-                  <li>ADMB</li>
-                
-                  <li>Guided User Interface</li>
-                
-                  <li>Legacy Tool</li>
-                
-                        
+          <h3>
+          Keywords
+          </h3>
+          
+          
+            <li>Stock Assessment Model</li>
+          
+            <li>Length Structured Model</li>
+          
+            <li>ADMB</li>
+          
+            <li>Guided User Interface</li>
+          
+            <li>Legacy Tool</li>
+          
+                    
       </div>
 
       <div class = "divider"></div>

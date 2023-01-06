@@ -8,14 +8,25 @@
 </head>
 <body>
     <div class="container">
+      <div class="mywrap_head">
+        <img src="https://raw.githubusercontent.com/noaa-fisheries-integrated-toolbox/FIT_graphics/main/FIT_logo/logo_pngs/FIT_logo_2022_color_no_text.png" alt="NOAA Fisheries Integrated Toolbox Logo" height="75">&nbsp;&nbsp;&nbsp;
+        <h1 class ="header_title">NOAA Fisheries Integrated Toolbox</h1>
+    </div>
+    <div class = "divider"></div>
+      <div class ="mywrap_head">
+        <button class="header_button" onclick="location.href='/';" value="FIT homepage">FIT Homepage</button>
+        <button class="header_button" onclick="location.href='/resources';" value="Explore Resources" >Explore Resources</button>
+        <button class="header_button" onclick="location.href='/resources/noaa%20fit/contact';" value="Contact FIT" >Contact FIT</button>
+      </div>
+    <div class = "divider"></div>
         <div class="mywrap">
-            <h1 class ="title">
-              Management Strategy Evaluation
-            </h1>
+            <h2 class ="title">
+              Tool: Management Strategy Evaluation (MSE)
+            </h2>
               
               <!-- <div class = "badge" data-md-tooltip="Not Validated" id="greycheck"> -->
               <!-- &#10039; -->
-              </div>
+              <!-- </div> -->
               
 
         </div>
@@ -50,90 +61,68 @@
                 Code Repository
                 </button>
               
-              <button class = "IconButton" title="e-mail fisheries.toolbox@noaa.gov" id ="email" onclick='location.href= "mailto:fisheries.toolbox@noaa.gov;"'>
-              </button>
-
-        </div>
-      <div class = "divider">
-      </div>
-
-
-      <div class ="main">
-        <div class="mywrap">
-              <h2>
-                Management Strategy Evaluation (MSE)
-
-              </h2>
-
 
               
-
 
               
               
               <img class = "versionButton" alt="GitHub release (latest by date)" src= https://img.shields.io/github/v/release/nmfs-fish-tools/MSE?color=%230093D0&include_prereleases&label=%20>
               
 
-
         </div>
+      <div class = "divider_thin">
+      </div>
 
+
+      <div class ="main">
+          
         
-            <!--  -->
-        
-        
-        <h2>Authors</h2>
-        <div class = "authName">
+        <h3>Authors</h3>
+        <p>
         Seaver, A.
-        </div >
+        </p>
         
 
 
         
           
-          <h2>Description</h2>
-          <div class ="mainText">
+          <h3>Description</h3>
+          <p>
             The Management Strategy Evaluation (MSE) program combines a number of NFT programs to examine the ability of stock assessment programs to provide the correct management advice when a variety of assumptions are broken. The PopSim model is used to create the operating model, aka simulated truth, while the VPA or ASPIC models can be used to estimate the population trajectory and time series of fishing mortality rates. These estimated values are used as input for AgePro or ASPICproj, respectively, to forecast the amount of catch that should be caught in future years according to a user defined control rule. The control rule relates the desired fishing mortality rate to the spawning stock or population biomass according to a simple rule of the full rate at high biomass with a linear decline once biomass falls below a user defined breakpoint. The simulated population has this amount of catch removed, with optional uncertainty and bias added, and the process is repeated a number of times into the future. The user can also optionally limit the amount of change in catch from year to year as an override of the expected catch from the projections. The feedback between the stock assessment model, forecasted catch, and future population abundance differentiates this program from the PopSim program.  The results of the MSE are a comparison between the true and estimated population abundance as well as the realized fishing mortality rate and the rate determined by the control rule. For example, the MSE program has been used with the VPA and AgePro settings to examine the utility of splitting survey time series in response to a strong retrospective pattern caused by changes in catch reporting or misspecification of the natural mortality rate. The program also allows the user to examine issues arising from low sampling of catch or surveys, as well as changes in biological characteristics such as the length-weight relationship. 
-          </div>
-              
+          </p>
+          
 
 
-              
+          
 
-              
+          
 
-
-              
-
-              
-
-
-
-              <h2>
-              Code Repository Badges
-              </h2>
+          
+          
+          <h3>
+          Code Repository Badges
+          </h3>
+            
+            <img src="https://www.repostatus.org/badges/latest/inactive.svg">
+            
+          
                   
-
-                      
-                          <img src="https://www.repostatus.org/badges/latest/inactive.svg">
-                      
-                  
-                  
-            <h2>
-             Keywords
-            </h2>
-              
-                
-                  <li>Management Strategy Evaluation</li>
-                
-                  <li>Guided User Interface</li>
-                
-                  <li>Simulation</li>
-                
-                  <li>Risk Assessment Tool</li>
-                
-                  <li>Legacy Tool</li>
-                
-                        
+          <h3>
+          Keywords
+          </h3>
+          
+          
+            <li>Management Strategy Evaluation</li>
+          
+            <li>Guided User Interface</li>
+          
+            <li>Simulation</li>
+          
+            <li>Risk Assessment Tool</li>
+          
+            <li>Legacy Tool</li>
+          
+                    
       </div>
 
       <div class = "divider"></div>

@@ -8,14 +8,25 @@
 </head>
 <body>
     <div class="container">
+      <div class="mywrap_head">
+        <img src="https://raw.githubusercontent.com/noaa-fisheries-integrated-toolbox/FIT_graphics/main/FIT_logo/logo_pngs/FIT_logo_2022_color_no_text.png" alt="NOAA Fisheries Integrated Toolbox Logo" height="75">&nbsp;&nbsp;&nbsp;
+        <h1 class ="header_title">NOAA Fisheries Integrated Toolbox</h1>
+    </div>
+    <div class = "divider"></div>
+      <div class ="mywrap_head">
+        <button class="header_button" onclick="location.href='/';" value="FIT homepage">FIT Homepage</button>
+        <button class="header_button" onclick="location.href='/resources';" value="Explore Resources" >Explore Resources</button>
+        <button class="header_button" onclick="location.href='/resources/noaa%20fit/contact';" value="Contact FIT" >Contact FIT</button>
+      </div>
+    <div class = "divider"></div>
         <div class="mywrap">
-            <h1 class ="title">
-              Age Structured Assessment Program
-            </h1>
+            <h2 class ="title">
+              Tool: Age Structured Assessment Program (ASAP)
+            </h2>
               
               <!-- <div class = "badge" data-md-tooltip="Not Validated" id="greycheck"> -->
               <!-- &#10039; -->
-              </div>
+              <!-- </div> -->
               
 
         </div>
@@ -50,21 +61,6 @@
                 Code Repository
                 </button>
               
-              <button class = "IconButton" title="e-mail fisheries.toolbox@noaa.gov" id ="email" onclick='location.href= "mailto:fisheries.toolbox@noaa.gov;"'>
-              </button>
-
-        </div>
-      <div class = "divider">
-      </div>
-
-
-      <div class ="main">
-        <div class="mywrap">
-              <h2>
-                Age Structured Assessment Program (ASAP)
-
-              </h2>
-
 
               
               <a class = "pdfIcon" title="download pdf"
@@ -72,81 +68,77 @@
               </a>
               
 
-
               
               
               <img class = "versionButton" alt="GitHub release (latest by date)" src= https://img.shields.io/github/v/release/nmfs-fish-tools/ASAP?color=%230093D0&include_prereleases&label=%20>
               
 
-
         </div>
+      <div class = "divider_thin">
+      </div>
 
+
+      <div class ="main">
+          
         
-            <!--  -->
-        
-        
-        <h2>Authors</h2>
-        <div class = "authName">
+        <h3>Authors</h3>
+        <p>
         C. Legault and V. Restrepo
-        </div >
+        </p>
         
 
 
         
           
-          <h2>Description</h2>
-          <div class ="mainText">
+          <h3>Description</h3>
+          <p>
             The Age Structured Assessment Program (ASAP) is an age-structured model that uses forward computations assuming separability of fishing mortality into year and age components to estimate population sizes given observed catches, catch-at-age, and indices of abundance. Discards can be treated explicitly. The separability assumption is relaxed by allowing for fleet-specific computations and by allowing the selectivity at age to change smoothly over time or in blocks of years. The software can also allow the catchability associated with each abundance index to vary smoothly with time. The problem’s dimensions (number of ages, years, fleets and abundance indices) are defined at input and limited by hardware only. The input is arranged assuming data is available for most years, but missing years are allowed. The model currently does not allow use of length data nor indices of survival rates. Diagnostics include index fits, residuals in catch and catch-at-age, and effective sample size calculations. Weights are input for different components of the objective function and allow for relatively simple age-structured production model type models up to fully parameterized models.  The calculation engine was built using AD Model Builder by Drs. Christopher M. Legault (currently at the NMFS Northeast Fisheries Science Center) and Victor R. Restrepo (currently at the NMFS Southeast Fisheries Science Center).  ASAP has been used as an assessment tool for red grouper (SEFSC), yellowtail flounder (NEFSC), Pacific sardine (SWFSC), Pacific mackerel (SWFSC), Greenland halibut (ICES), Norther Gulf of St. Lawrence cod (DFO), Gulf of Maine cod (NEFSC), Florida lobster (FFWCC), and fluke (NEFSC).
-          </div>
+          </p>
+          
+          <h3>References</h3>
+              <ul>
+                
+                <li>M Legault, Christopher & Restrepo, Victor. (1999). A Flexible Forward Age-Structured Assessment Program. ICCAT Coll. Vol. Sci. Pap.. 49. </li>
+                
+              </ul>
+         
+
+
+          
+          <h3>
+          Associated Tools
+          </h3>
+              <ul id = "associated_tools">
               
-                  <h2>References</h2>
-                  <ul>
-                      
-                          <li>M Legault, Christopher & Restrepo, Victor. (1999). A Flexible Forward Age-Structured Assessment Program. ICCAT Coll. Vol. Sci. Pap.. 49. </li>
-                      
-                  </ul>
+                <li><a href="https://timjmiller.github.io/wham"><i>WHAM</i></a></li>
               
+              </ul>
+          
 
+          
 
-              
-                  <h2>
-                      Associated Tools
-                  </h2>
-                  <ul id = "associated_tools">
-                      
-                          <li><a href="https://timjmiller.github.io/wham"><i>WHAM</i></a></li>
-                      
-                  </ul>
-              
-
-              
-
-
-              
-
-              
-
-
-
-              <h2>
-              Code Repository Badges
-              </h2>
+          
+          <h3>
+          Citation
+          </h3>
+            <p>M Legault, Christopher & Restrepo, Victor. (1999). A Flexible Forward Age-Structured Assessment Program. ICCAT Coll. Vol. Sci. Pap.. 49.</p>
+          
+          
                   
-                  
-            <h2>
-             Keywords
-            </h2>
-              
-                
-                  <li>Stock Assessment Model</li>
-                
-                  <li>Age Structured Model</li>
-                
-                  <li>Guided User Interface</li>
-                
-                  <li>Legacy Tool</li>
-                
-                        
+          <h3>
+          Keywords
+          </h3>
+          
+          
+            <li>Stock Assessment Model</li>
+          
+            <li>Age Structured Model</li>
+          
+            <li>Guided User Interface</li>
+          
+            <li>Legacy Tool</li>
+          
+                    
       </div>
 
       <div class = "divider"></div>

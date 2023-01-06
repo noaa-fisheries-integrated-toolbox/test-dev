@@ -8,14 +8,25 @@
 </head>
 <body>
     <div class="container">
+      <div class="mywrap_head">
+        <img src="https://raw.githubusercontent.com/noaa-fisheries-integrated-toolbox/FIT_graphics/main/FIT_logo/logo_pngs/FIT_logo_2022_color_no_text.png" alt="NOAA Fisheries Integrated Toolbox Logo" height="75">&nbsp;&nbsp;&nbsp;
+        <h1 class ="header_title">NOAA Fisheries Integrated Toolbox</h1>
+    </div>
+    <div class = "divider"></div>
+      <div class ="mywrap_head">
+        <button class="header_button" onclick="location.href='/';" value="FIT homepage">FIT Homepage</button>
+        <button class="header_button" onclick="location.href='/resources';" value="Explore Resources" >Explore Resources</button>
+        <button class="header_button" onclick="location.href='/resources/noaa%20fit/contact';" value="Contact FIT" >Contact FIT</button>
+      </div>
+    <div class = "divider"></div>
         <div class="mywrap">
-            <h1 class ="title">
-              Depletion-Corrected Average Catch
-            </h1>
+            <h2 class ="title">
+              Tool: Depletion-Corrected Average Catch (DCAC)
+            </h2>
               
               <!-- <div class = "badge" data-md-tooltip="Not Validated" id="greycheck"> -->
               <!-- &#10039; -->
-              </div>
+              <!-- </div> -->
               
 
         </div>
@@ -50,103 +61,81 @@
                 Code Repository
                 </button>
               
-              <button class = "IconButton" title="e-mail fisheries.toolbox@noaa.gov" id ="email" onclick='location.href= "mailto:fisheries.toolbox@noaa.gov;"'>
-              </button>
-
-        </div>
-      <div class = "divider">
-      </div>
-
-
-      <div class ="main">
-        <div class="mywrap">
-              <h2>
-                Depletion-Corrected Average Catch (DCAC)
-
-              </h2>
-
 
               
-
 
               
               
               <img class = "versionButton" alt="GitHub release (latest by date)" src= https://img.shields.io/github/v/release/nmfs-fish-tools/DCAC?color=%230093D0&include_prereleases&label=%20>
               
 
-
         </div>
+      <div class = "divider_thin">
+      </div>
 
+
+      <div class ="main">
+          
         
-            <!--  -->
-        
-        
-        <h2>Authors</h2>
-        <div class = "authName">
+        <h3>Authors</h3>
+        <p>
         MacCall, A.
-        </div >
+        </p>
         
 
 
         
           
-          <h2>Description</h2>
-          <div class ="mainText">
+          <h3>Description</h3>
+          <p>
             The Depletion-Corrected Average Catch is a method for estimating sustainable yields for data-poor fisheries.  Based on the idea that the average catch has been sustainable if abundance has not changed, DCAC makes a correction to that average if abundance has increased or decreased (which may be the subject of an educated guess based on subjective impressions).  The magnitude of the correction depends on the approximate natural mortality rate, which should be about 0.2 or smaller to apply this model.  Uncertainty is recognized in all of the parameters in the model, and is reflected in the output probability distribution.
-          </div>
-              
-                  <h2>References</h2>
-                  <ul>
-                      
-                          <li>Alverson, D., and W. Pereyra. 1969. Demersal fish explorations in the northeastern Pacific Ocean – an evaluation of exploratory fishing methods and analytical approaches to stock size and yield forecasts. J. Fish Res. Board Can. 26:1985-2001.</li>
-                      
-                          <li>Deriso, R. 1982. Relationship of fishing mortality to natural mortality and growth at the level of maximum sustainable yield. Can. J. Fish. Aquat. Sci. 39:1054-1-58.</li>
-                      
-                          <li>Gulland, J. 1970. Preface. In: J. Gulland (ed.) The fish resources of the oceans. FAO Fish. Tech. Pap. 97, p.1-4.</li>
-                      
-                          <li>He, X., D, Pearson, E. Dick, J. Field, S. Ralston, and A. MacCall. 2007. Status of the widow rockfish resource in 2007, an update. Pacific Fishery Management Council, Portland OR.</li>
-                      
-                          <li>MacCall, A. 2007. Depletion-adjusted average catch. pp. 27-31 In: Rosenberg, A., Agnew, D., Babcock, E., Mogensen, C., O’Boyle, R., Powers, J., Stefansson, G., Swasey, J. 2007. Setting annual catch limits for U.S. fisheries: An expert working group report. Lenfest Ocean Program, 1025 F Street NW, Suite 900, Washington, D.C.</li>
-                      
-                          <li>Walters, C., and S. Martell. 2004. Fisheries ecology and management. Princeton University Press. 399 p.</li>
-                      
-                  </ul>
-              
+          </p>
+          
+          <h3>References</h3>
+              <ul>
+                
+                <li>Alverson, D., and W. Pereyra. 1969. Demersal fish explorations in the northeastern Pacific Ocean – an evaluation of exploratory fishing methods and analytical approaches to stock size and yield forecasts. J. Fish Res. Board Can. 26:1985-2001.</li>
+                
+                <li>Deriso, R. 1982. Relationship of fishing mortality to natural mortality and growth at the level of maximum sustainable yield. Can. J. Fish. Aquat. Sci. 39:1054-1-58.</li>
+                
+                <li>Gulland, J. 1970. Preface. In: J. Gulland (ed.) The fish resources of the oceans. FAO Fish. Tech. Pap. 97, p.1-4.</li>
+                
+                <li>He, X., D, Pearson, E. Dick, J. Field, S. Ralston, and A. MacCall. 2007. Status of the widow rockfish resource in 2007, an update. Pacific Fishery Management Council, Portland OR.</li>
+                
+                <li>MacCall, A. 2007. Depletion-adjusted average catch. pp. 27-31 In: Rosenberg, A., Agnew, D., Babcock, E., Mogensen, C., O’Boyle, R., Powers, J., Stefansson, G., Swasey, J. 2007. Setting annual catch limits for U.S. fisheries: An expert working group report. Lenfest Ocean Program, 1025 F Street NW, Suite 900, Washington, D.C.</li>
+                
+                <li>Walters, C., and S. Martell. 2004. Fisheries ecology and management. Princeton University Press. 399 p.</li>
+                
+              </ul>
+         
 
 
-              
+          
 
-              
+          
 
-
-              
-
-              
-
-
-
-              <h2>
-              Code Repository Badges
-              </h2>
+          
+          
+          <h3>
+          Code Repository Badges
+          </h3>
+            
+            <img src="https://www.repostatus.org/badges/latest/inactive.svg">
+            
+          
                   
-
-                      
-                          <img src="https://www.repostatus.org/badges/latest/inactive.svg">
-                      
-                  
-                  
-            <h2>
-             Keywords
-            </h2>
-              
-                
-                  <li>Stock Assessment Model</li>
-                
-                  <li>Data Limited Method</li>
-                
-                  <li>Legacy Tool</li>
-                
-                        
+          <h3>
+          Keywords
+          </h3>
+          
+          
+            <li>Stock Assessment Model</li>
+          
+            <li>Data Limited Method</li>
+          
+            <li>Legacy Tool</li>
+          
+                    
       </div>
 
       <div class = "divider"></div>
