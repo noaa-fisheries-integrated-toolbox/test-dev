@@ -1,0 +1,247 @@
+{
+  "version": 1,
+  "locale": "en_US",
+  "platform": "4.2.2",
+  "metadata": {
+    "appmode": "static",
+    "primary_rmd": null,
+    "primary_html": "index.html",
+    "content_category": "site",
+    "has_parameters": false
+  },
+  "packages": null,
+  "files": {
+    "2BOX.html": {
+      "checksum": "fc0acdec7699086bb96df243479c93c8"
+    },
+    "AcousticThresholds.html": {
+      "checksum": "7b19d3abec5679425c6b332e8cd1b076"
+    },
+    "ADMB.html": {
+      "checksum": "5b12998aa1f7d1c52812f31016f742f0"
+    },
+    "adnuts.html": {
+      "checksum": "e5618870b47c9b7b7a0b2c6dfd9251f4"
+    },
+    "AGEPRO.html": {
+      "checksum": "594e3076b89c1a3374ce1fe1c01fa431"
+    },
+    "agTrend.html": {
+      "checksum": "5a88ff4f41cd85ea00aefc78077fba20"
+    },
+    "AIM.html": {
+      "checksum": "ee2dd708f3ee92677b2ac64bea61ac44"
+    },
+    "ASAP.html": {
+      "checksum": "ff1ec800b50f70c64b847f33ceb4f737"
+    },
+    "ASPIC.html": {
+      "checksum": "8f70ff55e82aa39bf0683e7f20f14eda"
+    },
+    "ATL.html": {
+      "checksum": "07c4bc3327b653747da8e8529c62f7b1"
+    },
+    "Atlantis.html": {
+      "checksum": "e2bf86f4447dd5165861aa8d12d6d7bd"
+    },
+    "atsar.html": {
+      "checksum": "7b191b2fd35441020315c8a4816c0a87"
+    },
+    "bayesdfa.html": {
+      "checksum": "9e3043ee0f071122f358749ec36018e6"
+    },
+    "browse.html": {
+      "checksum": "1d290e532a7fa2bb022b63240adce284"
+    },
+    "bycatch.html": {
+      "checksum": "cf35220d966b31185e186293a5a96853"
+    },
+    "CASAL2.html": {
+      "checksum": "97ad306b28a9e48ef793cdb7fe4c6e15"
+    },
+    "CSA.html": {
+      "checksum": "03e7fb27b577f94d8128789d82f5cf6d"
+    },
+    "DCAC.html": {
+      "checksum": "25ac69bf12ca0a5758f2e0ad5ba0fdfa"
+    },
+    "DisMAP.html": {
+      "checksum": "7fb6b1f04df62832387ad29841307ea7"
+    },
+    "Donut_Tool.html": {
+      "checksum": "d64dfbb7129c33db1fd192206edaf607"
+    },
+    "eSDM.html": {
+      "checksum": "476e0ce6bebb63e8666adb02507aefa9"
+    },
+    "EwE.html": {
+      "checksum": "719e2e331515c31c6f761b881b43129e"
+    },
+    "FishEconProdOutput.html": {
+      "checksum": "4df0b5e828a438062e233d2a1dbd8227"
+    },
+    "fisheye.html": {
+      "checksum": "4b018806cbd673a03d32b995e2e6dc5d"
+    },
+    "FishLife.html": {
+      "checksum": "b74fa17916c36d67ced111f47d6db78c"
+    },
+    "FishPath.html": {
+      "checksum": "b5cc025218ec1fcb64018ce2ffbfe68d"
+    },
+    "FishSET_Map_Viewer.html": {
+      "checksum": "488d2efed1bb94433e4ca4bf405014f0"
+    },
+    "GADGET.html": {
+      "checksum": "9aac64be4141e6b5035e123b72072206"
+    },
+    "ghactions4r.html": {
+      "checksum": "61d886438cabace475189d2a834c73fa"
+    },
+    "ghBackup.html": {
+      "checksum": "56803724dfb9ec8a030000ed0e859716"
+    },
+    "glmmfields.html": {
+      "checksum": "9ee41248cc9f4dfd2a366e784140b562"
+    },
+    "GMACS.html": {
+      "checksum": "9da9405b219625fd5634b57eea0c2460"
+    },
+    "index.html": {
+      "checksum": "0cdb33ce8e280f4849dfb401f6086810"
+    },
+    "IRATE.html": {
+      "checksum": "a40a54853c9224adac966fc39decd71d"
+    },
+    "KALMAN.html": {
+      "checksum": "6ae5c8f4ca329b48e5d31c27e966db57"
+    },
+    "LHSampling.html": {
+      "checksum": "2fd88b3ac0f691525c316ba05308cee6"
+    },
+    "MARSS.html": {
+      "checksum": "ad86e7e328f29156c4b39b3891a5b365"
+    },
+    "MCOMP.html": {
+      "checksum": "8fef8236c0b226bc22b3da270e082974"
+    },
+    "MIZER.html": {
+      "checksum": "b3b82686b2ee7e0f41596b633e912b90"
+    },
+    "MSCAA.html": {
+      "checksum": "baa7a79cde810cf2f70f74097a25d636"
+    },
+    "MSE.html": {
+      "checksum": "e2ccedc2a7abd943175807afd940f877"
+    },
+    "MSSPM.html": {
+      "checksum": "f851c6b801f6fff98e45759f841565ba"
+    },
+    "MSVPA_X2.html": {
+      "checksum": "28bd6134056b8f976903149da65362fc"
+    },
+    "nmfSharedUtilities.html": {
+      "checksum": "9b06aefee6c479b36e35a0503bb2a4b3"
+    },
+    "nmfspalette.html": {
+      "checksum": "b7071641a3eab245c67eb8d3105605c9"
+    },
+    "NWCTrends.html": {
+      "checksum": "6b83f1a585599ef889113d6ec123d7a3"
+    },
+    "ObsCovgTools.html": {
+      "checksum": "5f0c628324a26e50a1ccada72bc69da7"
+    },
+    "OSMOSE.html": {
+      "checksum": "790653c3e67a7a9f6fccf08c5eb25a21"
+    },
+    "phenomix.html": {
+      "checksum": "22e881b8b8e16bd4228929029136a71a"
+    },
+    "POPSIM-A.html": {
+      "checksum": "a829a9dd4e3d2d0b39c5013a5f84bbd4"
+    },
+    "POPSIM-L.html": {
+      "checksum": "53ac35d62934bbb944e50e3f36d586df"
+    },
+    "POPSIM.html": {
+      "checksum": "7f679dbe1827eacce7ec980c5a4f7a39"
+    },
+    "PSA.html": {
+      "checksum": "ffc7d6090e18bdbd3fbff8f61f6db6ce"
+    },
+    "r4MAS.html": {
+      "checksum": "9ace1c9d3ab9b08279412e0ad70e6ed3"
+    },
+    "r4ss.html": {
+      "checksum": "72bb29256caf7b49efc96bdd87f764dc"
+    },
+    "REIA.html": {
+      "checksum": "fbe34fc1588ddb952cb7b8eddf19dbe6"
+    },
+    "REMORA.html": {
+      "checksum": "100074f2943964677ce0a87737230c10"
+    },
+    "RIVARD.html": {
+      "checksum": "a74bcb44241bef2c3ba97a1ee3dd57d9"
+    },
+    "RPATH.html": {
+      "checksum": "0d9af5f09a8f51854d2ea1f6050575d0"
+    },
+    "SCALE.html": {
+      "checksum": "e980504351276918359a16abf7d55eee"
+    },
+    "SEINE.html": {
+      "checksum": "78e71ecedb31e303537517000eba84d0"
+    },
+    "SIFC.html": {
+      "checksum": "e8a1f8ff65b5529db5e12d7f4f023022"
+    },
+    "SRFIT.html": {
+      "checksum": "784ca34267fccb240bbdff086408f4e4"
+    },
+    "SS-DL_Tool.html": {
+      "checksum": "51275af96495a4dc40a45b29e0659e4d"
+    },
+    "SS3.html": {
+      "checksum": "9bb7ccc2c44f4cef91b47e4a476dae94"
+    },
+    "SSMSE.html": {
+      "checksum": "19652e634aaff3f1056ce62906085717"
+    },
+    "STATCAM.html": {
+      "checksum": "98b50000b455ba3a236a66c7d1c6f8cd"
+    },
+    "static/main.css": {
+      "checksum": "207014dc9a604e5e20b3077f1cb0633b"
+    },
+    "StockSMART.html": {
+      "checksum": "e608ee7c99359671fce02f1e9633583e"
+    },
+    "VAST.html": {
+      "checksum": "f11aa8a61c2b31ad030fc7f102d1c7b0"
+    },
+    "VES-V.html": {
+      "checksum": "42e47042c94a30efd9dfa078500e5d36"
+    },
+    "VPA.html": {
+      "checksum": "15003bb0914173f45d9c59aa99be6112"
+    },
+    "VRAP.html": {
+      "checksum": "7208ff604b58e660a6d26e6f00281b5f"
+    },
+    "VRD.html": {
+      "checksum": "85d6455571cbe5d5c76260d6a6e8eb96"
+    },
+    "WHAM.html": {
+      "checksum": "e270b0c3948ff0a4553ec29bfff11d3b"
+    },
+    "YPR.html": {
+      "checksum": "682008c628e2f39bdc030ef2e95b8df8"
+    },
+    "YPRLEN.html": {
+      "checksum": "f3b1e17c7b9b61777ce701bd40ada22a"
+    }
+  },
+  "users": null
+}
