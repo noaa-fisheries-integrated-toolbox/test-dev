@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>NOAA Fisheries Productivity and Susceptibility Analysis</title>
+    <title>NOAA Fisheries Productivity and Susceptibility Analysis (Shiny Version)</title>
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/noaa-fisheries-integrated-toolbox/FIT_graphics/main/FIT_logo/logo_pngs/FIT_favicon_2022_color.png">
    <link type="text/css" rel="stylesheet" href="./static/main.css" />
 
@@ -28,18 +28,18 @@
     <div class = "divider"></div>
         <div class="mywrap">
             <h2 class ="title">
-              Tool: Productivity and Susceptibility Analysis (PSA)
+              Tool: Productivity and Susceptibility Analysis (Shiny Version) (PSA)
             </h2>
         </div>
         <div class="mywrap">
               
-                <button class = "codelink nolink" title="Online application unavailable">
+              <button class = "codelink" title="link to online application" onclick=" window.open('https://connect.fisheries.noaa.gov/psa/', '_blank'); return false;">
                 Online Application
                 </button>
               
 
               
-              <button class = "codelink" title="link to download application" onclick=" window.open('https://github.com/nmfs-fish-tools/PSA/releases/download/1.4.0/PSA-1-4.zip', '_blank'); return false;">
+                <button class = "codelink nolink" title="Downloadable application unavailable">
                 Download Application
                 </button>
               
@@ -52,22 +52,19 @@
 
 
               
-               <button class = "codelink" title="link to documentation" onclick=" window.open('https://repository.library.noaa.gov/view/noaa/3713', '_blank'); return false;">
+                <button class = "codelink nolink" title="Documentation unavailable">
                 Documentation
                 </button>
               
 
               
-                <button class = "codelink nolink" title="Code Repository unavailable">
+               <button class = "codelink" title="link to Code Repository" onclick=" window.open('https://github.com/nathanvaughan1/PSA', '_blank'); return false;">
                 Code Repository
                 </button>
               
 
               
 
-              
-              
-              <img class = "versionButton" alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/nmfs-fish-tools/PSA?color=%230093D0&include_prereleases&label=%20">
               
 
         </div>
@@ -79,13 +76,13 @@
         
         <h3>Authors</h3>
         <p>
-        Jones
+        Nathan Vaughan, Jason Cope
         </p>
         
 
         <h3>Description</h3>
         <p>
-          The Productivity-Susceptibility Analysis (PSA) is a semi-quantitative and rapid risk assessment tool that relies on the life history characteristics of a stock (i.e., productivity) and its susceptibility to the fishery in question.  First used to classify differences in bycatch sustainability in the Australian prawn fishery in 2001, this assessment has a long history of use in evaluating fisheries and is recommended by several organizations and work groups as a reasonable approach for determining risk.  <p>The productivity and susceptibility of a stock is determined by providing a score ranging from 1 (low) to 3 (high) for a standardized set of attributes related to each index (productivity = 10; susceptibility = 12).  When scoring these attributes, the user has the ability to also assess the data quality associated with each attribute score, and customize the analysis by weighting these attributes according to the fishery.  The scores for the productivity and susceptibility indices are then automatically calculated and graphically displayed on an x-y scatter plot.  Stocks that receive a low productivity score and high susceptibility score are considered to be at a high risk of becoming depleted, while stocks with a high productivity score and low susceptibility score are considered to be at low risk of becoming depleted.</p>  This version of the PSA has been customized to specifically assess the vulnerability of U.S. fish stocks from becoming overfished (B<sub>current</sub> < <span>&#189;</span>B<sub>msy</sub>) or undergoing overfishing (F<sub>current</sub> > F<sub>msy</sub>), with an emphasis on assessing data-poor stocks.  Where, vulnerability has been identified by NOAA-Fisheries as a useful measure for: 1) identifying stocks that should be managed and protected under a fishery management plan, 2) grouping data-poor stocks into relevant management complexes, and 3) developing precautionary harvest control rules.  In addition, scoring of the data quality used to define vulnerability may help in determining species of interest for further data collection and particular data gaps across species.
+          Productivity-Susceptibility Analysis (PSA) is a semi-quantitative and rapid risk assessment approach described by Patrick et al (2009) that relies on the life history characteristics of a stock (i.e., productivity) and its susceptibility to the fishery in question to estimate its expected vulnerability to depletion. First used to classify differences in bycatch sustainability in the Australian prawn fishery in 2001, this assessment has a long history of use in evaluating fisheries and is recommended by several organizations and work groups as a reasonable approach for determining risk. The productivity and susceptibility of a stock is determined using scores ranging from 1 (low) to 3 (high) for a standardized set of attributes related to each index (productivity = 10; susceptibility = 12). When scoring these attributes, the original Patrick et al approach utilized a single score value, data quality rating, and relative weight for each attribute which were combined to calculate single productivity and susceptibility values for each species. Productivity and susceptibility are used to calculate a single vulnerability score for each stock (vulnerability=sqrt((3-productivity)^2 +(susceptibility-1)^2)). Stocks that receive a low productivity score and high susceptibility score are considered to be at a high risk of becoming depleted, while stocks with a high productivity score and low susceptibility score are considered to be at a low risk of becoming depleted. This tool is an R-Shiny application developed to perform a stochastic Productivity-Susceptability risk analysis. It extends the existing methodology of Patrick et al (2009) by providing the ability to assign a relative weight to each score for each attribute rather than a single value. Bootstrap resampling of scores based on their relative weights is used to define productivity, susceptibility, and vulnerability likelihood distributions. This alternate methodology and shiny application were developed by Dr Nathan Vaughan of Vaughan Analytics supporting NOAA's Southeast Fisheries Science Center in collaboration with Dr Jason Cope of NOAA's Northwest Fisheries Science Center. 
         </p>
 
         
@@ -96,29 +93,16 @@
           
 
           
-          
           <h3>
-          Code Repository Badges
+          Citation
           </h3>
-            
-            <img class="software_badge" src="https://www.repostatus.org/badges/latest/inactive.svg">
-            <br>
-            
+            <p>https://github.com/nathanvaughan1/PSA</p>
+          
           
                   
           <h3>
           Keywords
           </h3>
-          
-          <ul>
-          
-            <li>Risk Assessment Tool</li>
-          
-            <li>Fish and Fisheries</li>
-          
-            <li>Simulation</li>
-          
-          </ul>
           
 
       <div class = "divider"></div>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NOAA Fisheries Productivity and Susceptibility Analysis (National Fisheries Toolbox)</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/noaa-fisheries-integrated-toolbox/FIT_graphics/main/FIT_logo/logo_pngs/FIT_favicon_2022_color.png">
+   <link type="text/css" rel="stylesheet" href="./static/main.css" />
+
+</head>
+<body>
+    <div class="container">
+      <div class="mywrap_head">
+        <img src="https://raw.githubusercontent.com/noaa-fisheries-integrated-toolbox/FIT_graphics/main/FIT_logo/logo_pngs/FIT_logo_2022_color_no_text.png" alt="NOAA Fisheries Integrated Toolbox Logo" height="75">&nbsp;&nbsp;&nbsp;
+        <h1 class ="header_title">NOAA Fisheries Integrated Toolbox</h1>
+    </div>
+    <div class ="mywrap_head">
+      <button class="dropbtn" onclick="location.href='/';" value="FIT homepage" >FIT Homepage</button>
+        <div class="dropdown">
+          <button class="dropbtn" value="Resources" >Resources</button>
+            <div class="dropdown-content">
+              <button class="menudropbtn" onclick="location.href='/resources';" value="Resources Home" >Resources Home</button>
+              <button class="menudropbtn" onclick="location.href='/resources/categories';" value="Browse by category" >Browse By Category</button>
+              <button class="menudropbtn" onclick="location.href='/resources/tags';" value="Browse by tag" >Browse By Tag</button>
+            </div>
+        </div>
+      <button class="dropbtn" onclick="location.href='/resources/about';" value="About" >About</button>
+       <button class="dropbtn" onclick="location.href='/resources/noaa%20fit/contact';" value="Contact" >Contact</button>
+    </div>
+    <div class = "divider"></div>
+        <div class="mywrap">
+            <h2 class ="title">
+              Tool: Productivity and Susceptibility Analysis (National Fisheries Toolbox) (PSA_nft)
+            </h2>
+        </div>
+        <div class="mywrap">
+              
+                <button class = "codelink nolink" title="Online application unavailable">
+                Online Application
+                </button>
+              
+
+              
+              <button class = "codelink" title="link to download application" onclick=" window.open('https://github.com/nmfs-fish-tools/PSA/releases/download/1.4.0/PSA-1-4.zip', '_blank'); return false;">
+                Download Application
+                </button>
+              
+
+              
+                <button class = "codelink nolink" title="Website unavailable">
+                Website
+                </button>
+              
+
+
+              
+               <button class = "codelink" title="link to documentation" onclick=" window.open('https://repository.library.noaa.gov/view/noaa/3713', '_blank'); return false;">
+                Documentation
+                </button>
+              
+
+              
+                <button class = "codelink nolink" title="Code Repository unavailable">
+                Code Repository
+                </button>
+              
+
+              
+
+              
+              
+              <img class = "versionButton" alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/nmfs-fish-tools/PSA?color=%230093D0&include_prereleases&label=%20">
+              
+
+        </div>
+      <div class = "divider_thin">
+      </div>
+
+
+         
+        
+        <h3>Authors</h3>
+        <p>
+        Jones
+        </p>
+        
+
+        <h3>Description</h3>
+        <p>
+          Please use the PSA Shiny version linked in associated tools instead. The Productivity-Susceptibility Analysis (PSA) is a semi-quantitative and rapid risk assessment tool that relies on the life history characteristics of a stock (i.e., productivity) and its susceptibility to the fishery in question.  First used to classify differences in bycatch sustainability in the Australian prawn fishery in 2001, this assessment has a long history of use in evaluating fisheries and is recommended by several organizations and work groups as a reasonable approach for determining risk.  <p>The productivity and susceptibility of a stock is determined by providing a score ranging from 1 (low) to 3 (high) for a standardized set of attributes related to each index (productivity = 10; susceptibility = 12).  When scoring these attributes, the user has the ability to also assess the data quality associated with each attribute score, and customize the analysis by weighting these attributes according to the fishery.  The scores for the productivity and susceptibility indices are then automatically calculated and graphically displayed on an x-y scatter plot.  Stocks that receive a low productivity score and high susceptibility score are considered to be at a high risk of becoming depleted, while stocks with a high productivity score and low susceptibility score are considered to be at low risk of becoming depleted.</p>  This version of the PSA has been customized to specifically assess the vulnerability of U.S. fish stocks from becoming overfished (B<sub>current</sub> < <span>&#189;</span>B<sub>msy</sub>) or undergoing overfishing (F<sub>current</sub> > F<sub>msy</sub>), with an emphasis on assessing data-poor stocks.  Where, vulnerability has been identified by NOAA-Fisheries as a useful measure for: 1) identifying stocks that should be managed and protected under a fishery management plan, 2) grouping data-poor stocks into relevant management complexes, and 3) developing precautionary harvest control rules.  In addition, scoring of the data quality used to define vulnerability may help in determining species of interest for further data collection and particular data gaps across species.
+        </p>
+
+        
+
+
+        
+        <h3>
+        Associated Tools
+        </h3>
+            <ul id = "associated_tools">
+            
+              <li><a href="https://noaa-fisheries-integrated-toolbox.github.io/PSA">PSA, Shiny Version</a></li>
+            
+            </ul>
+        
+
+          
+
+          
+          
+          <h3>
+          Code Repository Badges
+          </h3>
+            
+            <img class="software_badge" src="https://www.repostatus.org/badges/latest/inactive.svg">
+            <br>
+            
+          
+                  
+          <h3>
+          Keywords
+          </h3>
+          
+          <ul>
+          
+            <li>Risk Assessment Tool</li>
+          
+            <li>Fish and Fisheries</li>
+          
+            <li>Simulation</li>
+          
+          </ul>
+          
+
+      <div class = "divider"></div>
+
+        <footer >
+         <img src="https://raw.githubusercontent.com/noaa-fisheries-integrated-toolbox/FIT_graphics/main/NOAA_logos/noaa-fisheries-rgb-2line-horizontal-small.png" height="75" alt="NOAA Fisheries">
+         <div class="mywrap_center">
+          <a class ="mylink line" href="https://www.commerce.gov/">U.S. Department of Commerce</a>
+         <a class ="mylink line" href="https://www.noaa.gov">National Oceanographic and Atmospheric Administration</a>
+         <a class ="mylink" href="https://www.fisheries.noaa.gov/">NOAA Fisheries</a>
+         </div>
+
+        </footer>
+        <div class ="attribution">Icons by icons8 https://icons8.com/</div>
+
+    </div>
+
+
+</body>
+</html>
+
