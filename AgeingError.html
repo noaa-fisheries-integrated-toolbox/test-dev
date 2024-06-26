@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) goes here for Prod site -->
+    <title>FIT tool: Ageing Error</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/noaa-fisheries-integrated-toolbox/FIT_graphics/main/FIT_logo/logo_pngs/FIT_favicon_2022_color.png">
+   <link type="text/css" rel="stylesheet" href="./static/main.css" />
+
+</head>
+<body>
+    <div class="container">
+      <div class="mywrap_head">
+        <img src="https://raw.githubusercontent.com/noaa-fisheries-integrated-toolbox/FIT_graphics/main/FIT_logo/logo_pngs/FIT_logo_2022_color_no_text.png" alt="NOAA Fisheries Integrated Toolbox Logo" height="75">&nbsp;&nbsp;&nbsp;
+        <h1 class ="header_title">NOAA Fisheries Integrated Toolbox</h1>
+    </div>
+    <div class ="mywrap_head">
+      <button class="dropbtn" onclick="location.href='/';" value="FIT homepage" >FIT Homepage</button>
+        <div class="dropdown">
+          <button class="dropbtn" value="Resources" >Resources</button>
+            <div class="dropdown-content">
+              <button class="menudropbtn" onclick="location.href='/resources';" value="Resources Home" >Resources Home</button>
+              <button class="menudropbtn" onclick="location.href='/resources/categories';" value="Browse by category" >Browse By Category</button>
+              <button class="menudropbtn" onclick="location.href='/resources/tags';" value="Browse by tag" >Browse By Tag</button>
+            </div>
+        </div>
+      <button class="dropbtn" onclick="location.href='/resources/about';" value="About" >About</button>
+       <button class="dropbtn" onclick="location.href='/resources/noaa%20fit/contact';" value="Contact" >Contact</button>
+    </div>
+    <div class = "divider"></div>
+        <div class="mywrap">
+            
+            <h2 class ="title">
+              Tool: Ageing Error (AgeingError)
+            </h2>
+        </div>
+        <br>
+        <div class="mywrap">
+              
+                <button class = "codelink nolink" title="Online application unavailable">
+                Online Application
+                </button>
+              
+
+              
+                <button class = "codelink nolink" title="Downloadable application unavailable">
+                Download Application
+                </button>
+              
+
+              
+               <button class = "codelink" title="link to website" onclick=" window.open('https://pfmc-assessments.github.io/AgeingError/', '_blank'); return false;">
+                Website
+                </button>
+              
+
+
+              
+               <button class = "codelink" title="link to documentation" onclick=" window.open('https://pfmc-assessments.github.io/AgeingError/articles/getting_started.html', '_blank'); return false;">
+                Documentation
+                </button>
+              
+
+              
+               <button class = "codelink" title="link to Code Repository" onclick=" window.open('https://github.com/pfmc-assessments/AgeingError', '_blank'); return false;">
+                Code Repository
+                </button>
+              
+
+
+              <!-- Stop using pdf download because the description is too general to
+              work well for folks using screen readers. -->
+              <!--  -->
+
+              
+
+        </div>
+      <div class = "divider_thin">
+      </div>
+
+
+         
+        
+        <h3>Authors</h3>
+        <p>
+        Andre E. Punt, Kelli F. Johnson, James T. Thorson, Ian G. Taylor, Paul Burch
+        </p>
+        
+
+        
+        <h3>Contributors</h3>
+        <p>
+        Ian J. Stewart, Melissa A. Haltuch
+        </p>
+        
+
+        <h3>Description</h3>
+        <p>
+          The AgeingError package estimates uncertainty in age estimates double-reads of hard structures (e.g., otoliths) based on the method of Punt et al. (2008) that account for both ageing bias and imprecision. The output can be used in Stock Synthesis or other assessment platforms that incorporate ageing error.
+        </p>
+
+        
+        <h3>References</h3>
+            <ul>
+              
+              <li>Punt, A. E., Smith, D. C., KrusicGolub, K., & Robertson, S. (2008). Quantifying age-reading error for use in fisheries stock assessments, with application to species in Australia’s southern and eastern scalefish and shark fishery. Canadian Journal of Fisheries and Aquatic Sciences, 65(9), 1991–2005. <a href="https://doi.org/10.1139/f08-111">https://doi.org/10.1139/f08-111</a>
+</li>
+              
+            </ul>
+        
+
+        
+        <h3>
+          Installation Instructions
+        </h3>
+        <p>
+          In R, install from GitHub:
+```
+# using {remotes}
+remotes::install_github("pfmc-assessments/AgeingError")
+# using {pak}
+pak::pak("pfmc-assessments/AgeingError")
+```
+        </p>
+        
+
+        
+
+          
+
+          
+          <h3>
+          Citation
+          </h3>
+            <p>Users should cite both the R package and the associated 2008 manuscript, both described at https://pfmc-assessments.github.io/AgeingError/authors.html#citation</p>
+          
+          
+                  
+          <h3>
+          Keywords
+          </h3>
+          
+          <ul>
+          
+            <li>Data Exploration</li>
+          
+            <li>Fisheries</li>
+          
+            <li>R Package</li>
+          
+            <li>TMB</li>
+          
+          </ul>
+          
+
+          <div class = "divider"></div>
+          <a class = "mylink" href = "https://noaa-fisheries-integrated-toolbox.github.io/site-index">Site Index</a>
+          <div class = "divider"></div>
+        <footer >
+         <img src="https://raw.githubusercontent.com/noaa-fisheries-integrated-toolbox/FIT_graphics/main/NOAA_logos/noaa-fisheries-rgb-2line-horizontal-small.png" height="75" alt="NOAA Fisheries">
+         <div class="mywrap_center">
+          <a class ="mylink line" href="https://www.commerce.gov/">U.S. Department of Commerce</a>
+         <a class ="mylink line" href="https://www.noaa.gov">National Oceanographic and Atmospheric Administration</a>
+         <a class ="mylink" href="https://www.fisheries.noaa.gov/">NOAA Fisheries</a>
+         </div>
+
+        </footer>
+        <!-- <div class ="attribution">Icons by icons8 https://icons8.com/</div> -->
+
+    </div>
+
+
+</body>
+</html>
+
